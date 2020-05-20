@@ -23,9 +23,21 @@ class Teasers(SectionView):
 
 @section_view
 class Images(SectionView):
-    verbose_name = _('Image(s)')
+    verbose_name = 'Afbeelding(en)'
     fields = ['images']
     template_name = 'images.html'
+
+@section_view
+class LargeHeader(SectionView):
+    verbose_name = 'Header (groot)'
+    fields = ['content']
+    template_name = 'header_large.html'
+
+@section_view
+class SmallHeader(SectionView):
+    verbose_name = 'Header (klein)'
+    fields = []
+    template_name = 'header_small.html'
 
 @section_view
 class Video(SectionView):
