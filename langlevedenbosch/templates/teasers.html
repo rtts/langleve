@@ -1,0 +1,29 @@
+{% load cms thumbnail %}
+
+<section class="teasers">
+  <div class="wrapper">
+
+    {% for teaser in section.teasers.all %}
+      <div class="teaser">
+        <div class="title">
+          <h2>
+            {{teaser.title}}
+          </h2>
+        </div>
+
+        <div class="image">
+          <img src="{% thumbnail teaser.image 800x800 %}">
+        </div>
+
+        <div class="content">
+          {% eval teaser.content %}
+        </div>
+
+        <div class="button">
+          <a class="button" href="{{teaser.href}}">Lees meer</a>
+        </div>
+
+        {% editsection '<img src="/static/cms/edit.png">' %}
+      </div>
+    {% endfor %}
+</section>

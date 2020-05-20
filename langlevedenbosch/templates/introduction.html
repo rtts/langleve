@@ -1,0 +1,11 @@
+{% load cms thumbnail %}
+
+<section class="introduction">
+  <div class="wrapper">
+    <div class="content">
+      {% eval section.content %}
+    </div>
+    {% editsection '<img src="/static/cms/edit.png">' %}
+  </div>
+
+</section>
