@@ -12,8 +12,6 @@ html, body {
   padding: 0;
   background: $color1;
   color: white;
-  position: relative;
-  overflow-x: hidden;
 }
 
 header, nav, article {
@@ -205,7 +203,7 @@ nav {
       display: block;
     }
     ul#menu {
-      position: absolute;
+      position: fixed;
       min-height: 100%;
       overflow-y: auto;
       z-index: 1;

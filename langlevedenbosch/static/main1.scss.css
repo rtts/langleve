@@ -6,10 +6,6 @@ html, body {
   background: #ef7b97;
   color: white; }
 
-body {
-  position: relative;
-  overflow-x: hidden; }
-
 header, nav, article {
   background: white;
   color: black;
@@ -163,7 +159,7 @@ nav {
   nav button#hamburger {
     display: block; }
   nav ul#menu {
-    position: absolute;
+    position: fixed;
     min-height: 100%;
     overflow-y: auto;
     z-index: 1;
