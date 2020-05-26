@@ -191,6 +191,7 @@ section.header {
     display: inline-block;
     position: relative; }
     section.header div.wrapper h1, section.header div.wrapper h2, section.header div.wrapper h3 {
+      display: inline-block;
       font-size: 4em;
       margin: 0;
       color: white;
@@ -303,4 +304,4 @@ footer {
   font-weight: 700;
   src: url("Allan_700.woff2") format("woff2"), url("Allan_700.woff") format("woff"), url("Allan_700.ttf") format("truetype"); }
 
-/*# sourceMappingURL=main1.scss.css.map */
+/*# sourceMappingURL=main2.scss.css.map */

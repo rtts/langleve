@@ -250,7 +250,9 @@ section.header {
     padding: 0;
     display: inline-block;
     position: relative;
+
     h1, h2, h3 {
+      display: inline-block;
       font-size: 4em;
       margin: 0;
       color: white;
