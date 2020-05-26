@@ -14,25 +14,32 @@
   </head>
   <body>
     {% block main %}
-      <nav>
-        {% block nav %}
-          {% if pages %}
-            <ul id="menu">
-              {% for p in pages %}
-                <li><a href="{% if p.slug %}{% url 'cms:page' p.slug %}{% else %}{% url 'cms:page' %}{% endif %}" {% if p.pk == page.pk %}class="current"{% endif %}>{{p.title}}</a></li>
-              {% endfor %}
-              {% if perms.cms_page_create %}
-                <li><a class="edit" href="{% url 'cms:createpage' %}">+ {% trans 'new page' %}</a></li>
-              {% endif %}
-            </ul>
-          {% endif %}
-          <button class="hamburger hamburger--collapse" id='hamburger'>
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
-        {% endblock %}
-      </nav>
+
+      <header>
+        <h1>
+          <a href="/">Lang <br> Leve...!</a>
+        </h1>
+
+        <nav>
+          {% block nav %}
+            {% if pages %}
+              <ul id="menu">
+                {% for p in pages %}
+                  <li {% if p.pk == page.pk %}class="current"{% endif %}><a href="{% if p.slug %}{% url 'cms:page' p.slug %}{% else %}{% url 'cms:page' %}{% endif %}" {% if p.pk == page.pk %}class="current"{% endif %}>{{p.title}}</a></li>
+                {% endfor %}
+                {% if perms.cms_page_create %}
+                  <li><a class="edit" href="{% url 'cms:createpage' %}">+ {% trans 'new page' %}</a></li>
+                {% endif %}
+              </ul>
+            {% endif %}
+            <button class="hamburger hamburger--collapse" id='hamburger'>
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          {% endblock %}
+        </nav>
+      </header>
 
       <article>
         {% block content %}

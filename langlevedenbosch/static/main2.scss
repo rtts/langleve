@@ -1,4 +1,4 @@
-$font: sans-serif;
+$font: Rubik, sans-serif;
 $titlefont: Allan;
 $small: 500px;
 $medium: 800px;
@@ -105,7 +105,27 @@ div.spacer {
   clear: both;
 }
 
+header {
+  background: $color1;
+  color: white;
+  text-align: center;
+
+  h1 {
+    display: inline-block;
+    font-size: 4em;
+    margin: 0.5em;
+    text-align: left;
+    line-height: 0.85em;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
 nav {
+  font-family: $titlefont;
+
   button#hamburger {
     position: absolute;
     z-index: 1;
@@ -133,23 +153,30 @@ nav {
   ul {
     //border-top: 2px solid $color1;
     //border-bottom: 2px solid $color1;
+    border-left: 5px solid white;
+    background: $color1;
+    color: white;
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
     overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: start;
+    //flex-wrap: wrap;
+    //justify-content: center;
+    //align-items: center;
+    //align-content: start;
 
     li {
+      flex: 1 1 0;
       margin: 0;
       padding: 0;
       display: inline-block;
+      border-top: 5px solid white;
+      border-right: 5px solid white;
 
       a {
+        color: inherit;
         font-size: 1.25rem;
         padding: 5px .5em;
         transition: .1s ease;
@@ -159,19 +186,18 @@ nav {
     }
   }
 
-//  @media(min-width: $small) {
-    a:hover:not(.edit), a.current {
-      text-decoration: none;
-      color: white;
-      background: $color1;
+  @media(min-width: $small) {
+    li:hover, li.current {
+      color: $color1;
+      background: white;
     }
 
     button#hamburger {
       display: none;
     }
-//  }
+  }
 
-//  @media(max-width: $small) {
+  @media(max-width: $small) {
     padding: 0;
 
     button#hamburger {
@@ -190,7 +216,9 @@ nav {
       right: 0;
       bottom: 0;
       background: white;
+      color: $color1;
       list-style: none;
+      display: block;
 
       li {
         width: 100%;
@@ -211,7 +239,7 @@ nav {
       &.visible {
         transform: translatex(0);
       }
-//    }
+    }
   }
 }
 
@@ -241,34 +269,11 @@ section {
 }
 
 section.header {
-  background: $color1;
-  color: white;
-  text-align: center;
-
-  div.wrapper {
-    margin: 5em 2.5%;
-    padding: 0;
-    display: inline-block;
-    position: relative;
-
-    h1, h2, h3 {
-      display: inline-block;
-      font-size: 4em;
-      margin: 0;
-      color: white;
-      text-align: left;
-      line-height: 0.85em;
-    }
-    h3 {
-      margin-top: 5rem;
-      font-family: $font;
-      font-size: 1em;
-      text-align: center;
-      line-height: 1;
-    }
-  }
+  display: none;
 }
+
 section.header_small {
+  display: none;
   background: $color1;
   color: white;
   text-align: left;
@@ -402,4 +407,11 @@ footer {
     url('Allan_700.woff2') format('woff2'),
     url('Allan_700.woff') format('woff'),
     url('Allan_700.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: normal;
+  src: url('Rubik.woff') format('woff');
 }

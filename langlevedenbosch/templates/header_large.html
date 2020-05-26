@@ -1,11 +1,9 @@
 {% load i18n cms %}
 
 <section class="header">
-  <div class="wrapper">
-    <a href="/">
-      <h1>Lang <br> Leve...!<br>Den Bosch</h1>
-      <h3>{{section.content|safe}}</h3>
-    </a>
-    {% editsection '<img src="/static/cms/edit.png">' %}
-  </div>
+  <h1>
+    <a href="/">Lang <br> Leve...!</a>
+  </h1>
+
+  {% editsection '<img src="/static/cms/edit.png">' %}
 </section>

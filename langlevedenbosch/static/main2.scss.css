@@ -1,5 +1,5 @@
 html, body {
-  font-family: sans-serif;
+  font-family: Rubik, sans-serif;
   line-height: 1.5;
   margin: 0;
   padding: 0;
@@ -91,8 +91,22 @@ div.spacer {
   height: 1rem;
   clear: both; }
 
+header {
+  background: #ef7b97;
+  color: white;
+  text-align: center; }
+  header h1 {
+    display: inline-block;
+    font-size: 4em;
+    margin: 0.5em;
+    text-align: left;
+    line-height: 0.85em; }
+    header h1 a {
+      color: white;
+      text-decoration: none; }
+
 nav {
-  padding: 0; }
+  font-family: Allan; }
   nav button#hamburger {
     position: absolute;
     z-index: 1;
@@ -110,63 +124,70 @@ nav {
     nav button#hamburger:focus {
       outline: none !important; }
   nav ul {
+    border-left: 5px solid white;
+    background: #ef7b97;
+    color: white;
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
     overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: start; }
+    display: flex; }
     nav ul li {
+      flex: 1 1 0;
       margin: 0;
       padding: 0;
-      display: inline-block; }
+      display: inline-block;
+      border-top: 5px solid white;
+      border-right: 5px solid white; }
       nav ul li a {
+        color: inherit;
         font-size: 1.25rem;
         padding: 5px .5em;
         transition: .1s ease;
         display: inline-block;
         font-weight: bold; }
-  nav a:hover:not(.edit), nav a.current {
-    text-decoration: none;
-    color: white;
-    background: #ef7b97; }
-  nav button#hamburger {
-    display: none; }
-  nav button#hamburger {
-    display: block; }
-  nav ul#menu {
-    position: fixed;
-    min-height: 100%;
-    overflow-y: auto;
-    z-index: 1;
-    margin: 0;
-    padding: 0;
-    padding-top: 2em;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: white;
-    list-style: none;
-    transition: .5s ease;
-    transform: translatex(100%); }
-    nav ul#menu li {
-      width: 100%;
-      box-sizing: border-box;
-      padding: 1em;
-      margin: 0 1em;
-      border-bottom: 1px solid #ddd;
-      line-height: 1.5;
-      text-align: center; }
-      nav ul#menu li a {
-        text-decoration: none; }
-    nav ul#menu.visible {
-      transform: translatex(0); }
-
+  @media (min-width: 500px) {
+    nav li:hover, nav li.current {
+      color: #ef7b97;
+      background: white; }
+    nav button#hamburger {
+      display: none; } }
+  @media (max-width: 500px) {
+    nav {
+      padding: 0; }
+      nav button#hamburger {
+        display: block; }
+      nav ul#menu {
+        position: fixed;
+        min-height: 100%;
+        overflow-y: auto;
+        z-index: 1;
+        margin: 0;
+        padding: 0;
+        padding-top: 2em;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: white;
+        color: #ef7b97;
+        list-style: none;
+        display: block;
+        transition: .5s ease;
+        transform: translatex(100%); }
+        nav ul#menu li {
+          width: 100%;
+          box-sizing: border-box;
+          padding: 1em;
+          margin: 0 1em;
+          border-bottom: 1px solid #ddd;
+          line-height: 1.5;
+          text-align: center; }
+          nav ul#menu li a {
+            text-decoration: none; }
+        nav ul#menu.visible {
+          transform: translatex(0); } }
 section {
   clear: both;
   position: relative; }
@@ -182,29 +203,10 @@ section {
       top: 0; }
 
 section.header {
-  background: #ef7b97;
-  color: white;
-  text-align: center; }
-  section.header div.wrapper {
-    margin: 5em 2.5%;
-    padding: 0;
-    display: inline-block;
-    position: relative; }
-    section.header div.wrapper h1, section.header div.wrapper h2, section.header div.wrapper h3 {
-      display: inline-block;
-      font-size: 4em;
-      margin: 0;
-      color: white;
-      text-align: left;
-      line-height: 0.85em; }
-    section.header div.wrapper h3 {
-      margin-top: 5rem;
-      font-family: sans-serif;
-      font-size: 1em;
-      text-align: center;
-      line-height: 1; }
+  display: none; }
 
 section.header_small {
+  display: none;
   background: #ef7b97;
   color: white;
   text-align: left; }
@@ -303,5 +305,11 @@ footer {
   font-style: normal;
   font-weight: 700;
   src: url("Allan_700.woff2") format("woff2"), url("Allan_700.woff") format("woff"), url("Allan_700.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: normal;
+  src: url("Rubik.woff") format("woff"); }
 
 /*# sourceMappingURL=main2.scss.css.map */
