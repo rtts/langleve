@@ -116,7 +116,7 @@ header {
     margin: 0.5em;
     text-align: left;
     line-height: 0.85em;
-    a {
+    a, a:hover {
       color: white;
       text-decoration: none;
     }
@@ -153,7 +153,8 @@ nav {
   ul {
     //border-top: 2px solid $color1;
     //border-bottom: 2px solid $color1;
-    border-left: 5px solid white;
+    $menuborder: 3px solid white;
+    border-left: $menuborder;
     background: $color1;
     color: white;
     list-style: none;
@@ -170,14 +171,14 @@ nav {
     li {
       flex: 1 1 0;
       margin: 0;
-      padding: 0;
+      padding: 0.5em 0;
       display: inline-block;
-      border-top: 5px solid white;
-      border-right: 5px solid white;
+      border-top: $menuborder;
+      border-right: $menuborder;
 
       a {
         color: inherit;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         padding: 5px .5em;
         transition: .1s ease;
         display: inline-block;
