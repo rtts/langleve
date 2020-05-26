@@ -141,7 +141,7 @@ nav ul {
     border-right: 3px solid white; }
     nav ul li a {
       color: inherit;
-      font-size: 1.5rem;
+      font-size: 1.1rem;
       padding: 5px .5em;
       transition: .1s ease;
       display: inline-block;
@@ -314,4 +314,4 @@ footer {
   font-weight: normal;
   src: url("Rubik.woff") format("woff"); }
 
-/*# sourceMappingURL=main3.scss.css.map */
+/*# sourceMappingURL=main4.scss.css.map */
