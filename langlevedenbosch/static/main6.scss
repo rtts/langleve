@@ -3,7 +3,8 @@ $titlefont: Allan;
 $small: 500px;
 $medium: 800px;
 $max-width: 700px;
-$color1: #ef7b97;
+// $color1: #ef7b97;
+$color1: #ed7a96;
 
 html, body {
   font-family: $font;
@@ -322,7 +323,8 @@ section.teasers {
   line-height: 1.2;
 
   div.wrapper {
-    background: linear-gradient(white, $color1);
+    //background: linear-gradient(white, $color1);
+    background: white;
     max-width: none;
     padding: 2em;
 
