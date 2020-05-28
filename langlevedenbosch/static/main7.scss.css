@@ -244,7 +244,6 @@ section.introduction {
 section.teasers {
   overflow: hidden;
   color: #ed7a96;
-  font-weight: bold;
   text-align: center;
   line-height: 1.2; }
   section.teasers div.wrapper {
@@ -352,4 +351,4 @@ footer {
   font-weight: bold;
   src: url("Rubik_500.woff") format("woff"); }
 
-/*# sourceMappingURL=main6.scss.css.map */
+/*# sourceMappingURL=main7.scss.css.map */
