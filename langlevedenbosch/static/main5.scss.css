@@ -315,7 +315,16 @@ section.contact form input, section.contact form textarea {
   margin: 0; }
 
 footer {
-  min-height: 10em; }
+  background: linear-gradient(white, #ef7b97);
+  padding-top: 4em;
+  padding-bottom: 1.5em;
+  text-align: center; }
+  footer img {
+    width: 70px;
+    position: relative;
+    top: 40px; }
+  footer a {
+    color: white; }
 
 @font-face {
   font-family: 'Allan';

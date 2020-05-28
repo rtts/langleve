@@ -412,7 +412,16 @@ section.contact {
 }
 
 footer {
-  min-height: 10em;
+  background: linear-gradient(white, $color1);
+  padding-top: 4em;
+  padding-bottom: 1.5em;
+  text-align: center;
+  img {
+    width: 70px;
+    position: relative;
+    top: 40px;
+  }
+  a { color: white }
 }
 
 @font-face {
