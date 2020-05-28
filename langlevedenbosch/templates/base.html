@@ -7,7 +7,7 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="{% static 'favicon.png' %}">
-    <link rel="stylesheet" href="{% static 'main5.scss.css' %}">
+    <link rel="stylesheet" href="{% static 'main6.scss.css' %}">
     <link rel="stylesheet" href="{% static 'hamburgers.css' %}">
     <title>{% block title %}Lang Leve...! Den Bosch{% endblock %}</title>
     {% block extrahead %}{% endblock %}
@@ -25,7 +25,7 @@
             {% if pages %}
               <ul id="menu">
                 {% for p in pages %}
-                  <li {% if p.pk == page.pk %}class="current"{% endif %}><a href="{% if p.slug %}{% url 'cms:page' p.slug %}{% else %}{% url 'cms:page' %}{% endif %}" {% if p.pk == page.pk %}class="current"{% endif %}>{{p.title}}</a></li>
+                  <li><a href="{% if p.slug %}{% url 'cms:page' p.slug %}{% else %}{% url 'cms:page' %}{% endif %}" {% if p.pk == page.pk %}class="current"{% endif %}>{{p.title}}</a></li>
                 {% endfor %}
                 {% if perms.cms_page_create %}
                   <li><a class="edit" href="{% url 'cms:createpage' %}">+ {% trans 'new page' %}</a></li>

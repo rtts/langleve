@@ -135,22 +135,21 @@ nav ul {
   nav ul li {
     flex: 1 1 0;
     margin: 0;
-    padding: 0.5em 0;
-    display: inline-block;
+    padding: 0;
     border-top: 3px solid white;
     border-right: 3px solid white; }
     nav ul li a {
+      height: 100%;
+      display: block;
       color: inherit;
       font-size: 1.1rem;
-      padding: 5px .5em;
-      transition: .1s ease;
-      display: inline-block;
+      padding: 1em;
       font-weight: bold; }
+      nav ul li a:hover, nav ul li a.current {
+        background: white;
+        color: #ef7b97; }
 
 @media (min-width: 500px) {
-  nav li:hover, nav li.current {
-    color: #ef7b97;
-    background: white; }
   nav button#hamburger {
     display: none; } }
 
@@ -180,13 +179,15 @@ nav ul {
       nav ul#menu li {
         width: 100%;
         box-sizing: border-box;
-        padding: 1em;
-        margin: 0 1em;
-        border-bottom: 1px solid #ddd;
         line-height: 1.5;
-        text-align: center; }
+        text-align: center;
+        border: none;
+        border-bottom: 1px solid #ef7b97; }
         nav ul#menu li a {
           text-decoration: none; }
+          nav ul#menu li a:hover, nav ul#menu li a.current {
+            background: #ef7b97;
+            color: white; }
       nav ul#menu.visible {
         transform: translatex(0); } }
 
@@ -320,6 +321,7 @@ footer {
   padding-bottom: 1.5em;
   text-align: center; }
   footer img {
+    pointer-events: none;
     width: 70px;
     position: relative;
     top: 40px; }
@@ -350,4 +352,4 @@ footer {
   font-weight: bold;
   src: url("Rubik_500.woff") format("woff"); }
 
-/*# sourceMappingURL=main5.scss.css.map */
+/*# sourceMappingURL=main6.scss.css.map */

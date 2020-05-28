@@ -124,8 +124,6 @@ header {
 }
 
 nav {
-  //font-family: $titlefont;
-
   button#hamburger {
     position: absolute;
     z-index: 1;
@@ -151,8 +149,6 @@ nav {
   }
 
   ul {
-    //border-top: 2px solid $color1;
-    //border-bottom: 2px solid $color1;
     $menuborder: 3px solid white;
     border-left: $menuborder;
     background: $color1;
@@ -171,28 +167,27 @@ nav {
     li {
       flex: 1 1 0;
       margin: 0;
-      padding: 0.5em 0;
-      display: inline-block;
+      padding: 0;
       border-top: $menuborder;
       border-right: $menuborder;
 
       a {
+        height: 100%;
+        display: block;
         color: inherit;
         font-size: 1.1rem;
-        padding: 5px .5em;
-        transition: .1s ease;
-        display: inline-block;
+        padding: 1em;
         font-weight: bold;
+
+        &:hover, &.current {
+          background: white;
+          color: $color1;
+        }
       }
     }
   }
 
   @media(min-width: $small) {
-    li:hover, li.current {
-      color: $color1;
-      background: white;
-    }
-
     button#hamburger {
       display: none;
     }
@@ -224,14 +219,18 @@ nav {
       li {
         width: 100%;
         box-sizing: border-box;
-        padding: 1em;
-        margin: 0 1em;
-        border-bottom: 1px solid #ddd;
         line-height: 1.5;
         text-align: center;
+        border: none;
+        border-bottom: 1px solid $color1;
 
         a {
           text-decoration: none;
+
+          &:hover, &.current {
+            background: $color1;
+            color: white;
+          }
         }
       }
 
@@ -417,6 +416,7 @@ footer {
   padding-bottom: 1.5em;
   text-align: center;
   img {
+    pointer-events: none;
     width: 70px;
     position: relative;
     top: 40px;
