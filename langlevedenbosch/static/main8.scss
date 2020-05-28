@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $titlefont;
   line-height: 1em;
 }
-h1 { font-size: 3em; color: $color1 }
+h1 { font-size: 3em }
 h2 { font-size: 2em }
 h3 { font-size: 1.666em }
 h4, h5, h6 { font-size: 1em }
@@ -368,6 +368,92 @@ section.teasers {
           margin: 0;
           margin-bottom: 1rem;
           font-size: 2.5em;
+        }
+      }
+    }
+  }
+}
+
+section.calendar {
+  div.wrapper {
+    max-width: none;
+    padding: 0;
+    margin: 0;
+
+    div.calendar_item {
+      position: relative;
+      background: white;
+      color: $color1;
+      box-shadow: 2px 2px 5px #0006;
+      border-radius: 12px;
+      margin: 2em;
+      padding: 1em;
+      padding-left: calc(200px + 2em);
+
+      &:nth-child(odd) {
+        background: $color1;
+        color: white;
+        div.location {
+          background: white;
+          color: $color1;
+        }
+      }
+
+      div.image_wrapper {
+        width: 200px;
+        position: absolute;
+        left: 1em;
+        top: 1em;
+
+        div.image {
+          width: 100%;
+          padding-bottom: 56%;
+          position: relative;
+
+          img {
+            object-fit: cover;
+            background: #ccc;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+          }
+        }
+      }
+      @media(max-width:700px) {
+        padding: 1em;
+        div.image_wrapper {
+          width: 100%;
+          position: relative;
+          left: 0;
+          top: 0;
+          margin-bottom: 1em;
+        }
+      }
+
+      div.location {
+        background: $color1;
+        color: white;
+        position: absolute;
+        top: 0;
+        right: 2em;
+        width: 7em;
+        text-align: center;
+        padding: 0.5em 1em;
+        border-radius: 0 0 12px 12px;
+      }
+      div.datetime {
+        font-weight: bold;
+        small {
+          font-weight: normal;
+        }
+      }
+      div.title {
+        small {
+          font-size: 1rem;
+          font-weight: normal;
+          font-family: $font;
         }
       }
     }

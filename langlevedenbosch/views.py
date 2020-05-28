@@ -22,6 +22,12 @@ class Teasers(SectionView):
     template_name = 'teasers.html'
 
 @section_view
+class Calendar(SectionView):
+    verbose_name = 'Kalender'
+    fields = ['calendar_items']
+    template_name = 'calendar.html'
+
+@section_view
 class Images(SectionView):
     verbose_name = 'Afbeelding(en)'
     fields = ['images']

@@ -41,8 +41,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1em; }
 
 h1 {
-  font-size: 3em;
-  color: #ed7a96; }
+  font-size: 3em; }
 
 h2 {
   font-size: 2em; }
@@ -286,6 +285,70 @@ section.teasers {
         margin-bottom: 1rem;
         font-size: 2.5em; }
 
+section.calendar div.wrapper {
+  max-width: none;
+  padding: 0;
+  margin: 0; }
+  section.calendar div.wrapper div.calendar_item {
+    position: relative;
+    background: white;
+    color: #ed7a96;
+    box-shadow: 2px 2px 5px #0006;
+    border-radius: 12px;
+    margin: 2em;
+    padding: 1em;
+    padding-left: calc(200px + 2em); }
+    section.calendar div.wrapper div.calendar_item:nth-child(odd) {
+      background: #ed7a96;
+      color: white; }
+      section.calendar div.wrapper div.calendar_item:nth-child(odd) div.location {
+        background: white;
+        color: #ed7a96; }
+    section.calendar div.wrapper div.calendar_item div.image_wrapper {
+      width: 200px;
+      position: absolute;
+      left: 1em;
+      top: 1em; }
+      section.calendar div.wrapper div.calendar_item div.image_wrapper div.image {
+        width: 100%;
+        padding-bottom: 56%;
+        position: relative; }
+        section.calendar div.wrapper div.calendar_item div.image_wrapper div.image img {
+          object-fit: cover;
+          background: #ccc;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0; }
+    @media (max-width: 700px) {
+      section.calendar div.wrapper div.calendar_item {
+        padding: 1em; }
+        section.calendar div.wrapper div.calendar_item div.image_wrapper {
+          width: 100%;
+          position: relative;
+          left: 0;
+          top: 0;
+          margin-bottom: 1em; } }
+    section.calendar div.wrapper div.calendar_item div.location {
+      background: #ed7a96;
+      color: white;
+      position: absolute;
+      top: 0;
+      right: 2em;
+      width: 7em;
+      text-align: center;
+      padding: 0.5em 1em;
+      border-radius: 0 0 12px 12px; }
+    section.calendar div.wrapper div.calendar_item div.datetime {
+      font-weight: bold; }
+      section.calendar div.wrapper div.calendar_item div.datetime small {
+        font-weight: normal; }
+    section.calendar div.wrapper div.calendar_item div.title small {
+      font-size: 1rem;
+      font-weight: normal;
+      font-family: Rubik, sans-serif; }
+
 section.images div.images {
   display: flex;
   flex-wrap: wrap;
@@ -351,4 +414,4 @@ footer {
   font-weight: bold;
   src: url("Rubik_500.woff") format("woff"); }
 
-/*# sourceMappingURL=main7.scss.css.map */
+/*# sourceMappingURL=main8.scss.css.map */
