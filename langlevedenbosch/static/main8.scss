@@ -386,9 +386,10 @@ section.calendar {
       color: $color1;
       box-shadow: 2px 2px 5px #0006;
       border-radius: 12px;
-      margin: 2em;
+      margin: 1.5em;
       padding: 1em;
       padding-left: calc(200px + 2em);
+      min-height: 113px;
 
       &:nth-child(odd) {
         background: $color1;
@@ -450,6 +451,11 @@ section.calendar {
         }
       }
       div.title {
+	h2 {
+	  font-size: 2.5rem;
+          margin-top: 0.9rem;
+          margin-bottom: 0.4rem;
+        }
         small {
           font-size: 1rem;
           font-weight: normal;
