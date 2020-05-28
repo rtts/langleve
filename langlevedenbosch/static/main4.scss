@@ -309,38 +309,63 @@ section.text {
 section.introduction {
   margin: 2em 0;
   text-align: center;
-  font-size: 1.2em;
   div.wrapper {
     position: relative;
-    max-width: 500px;
+    max-width: 1000px;
   }
 }
 
 section.teasers {
   overflow: hidden;
+  color: $color1;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.2;
 
   div.wrapper {
-    display: flex;
-    flex-wrap: wrap;
+    background: linear-gradient(white, $color1);
     max-width: none;
-    margin: -1em;
-    justify-content: center;
+    padding: 2em;
+
+    // Yummy, new technology!
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2em;
 
     div.teaser {
+      background: white;
       position: relative;
-      flex: 0 1 300px;
-      border: 5px solid $color1;
-      border-radius: 15px;
+      border-radius: 12px;
       padding: 1em;
-      margin: 1em;
+      padding-bottom: 4em;
+      box-shadow: 2px 2px 5px #0006;
 
       img { width: 100%; }
 
+      div.button {
+        background: $color1;
+        color: white;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        padding: 0.5em 1em;
+        transform: translateX(-50%);
+        border-radius: 12px 12px 0 0;
+        font-family: $font;
+        a { color: inherit }
+      }
+
+      &:nth-child(odd) {
+        background: $color1;
+        color: white;
+        div.button { background: white; color: $color1 }
+      }
+
       div.title {
         h2 {
+          text-align: center;
           margin: 0;
           margin-bottom: 1rem;
-          color: $color1;
           font-size: 2.5em;
         }
       }
@@ -387,7 +412,6 @@ section.contact {
 }
 
 footer {
-  border-top: 5em solid white;
   min-height: 10em;
 }
 
@@ -415,4 +439,10 @@ footer {
   font-style: normal;
   font-weight: normal;
   src: url('Rubik.woff') format('woff');
+}
+@font-face {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: bold;
+  src: url('Rubik_500.woff') format('woff');
 }
