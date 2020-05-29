@@ -376,9 +376,19 @@ section.teasers {
 
 section.calendar {
   div.wrapper {
-    max-width: none;
+    max-width: 960px;
     padding: 0;
-    margin: 0;
+    //margin: 0;
+
+    a { text-decoration: none }
+    a:nth-child(odd) div.calendar_item {
+      background: $color1;
+      color: white;
+      div.location {
+        background: white;
+        color: $color1;
+      }
+    }
 
     div.calendar_item {
       position: relative;
@@ -390,15 +400,6 @@ section.calendar {
       padding: 1em;
       padding-left: calc(200px + 2em);
       min-height: 113px;
-
-      &:nth-child(odd) {
-        background: $color1;
-        color: white;
-        div.location {
-          background: white;
-          color: $color1;
-        }
-      }
 
       div.image_wrapper {
         width: 200px;

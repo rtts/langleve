@@ -4,38 +4,34 @@
   <div class="wrapper">
 
     {% for item in section.calendar_items.all %}
-      <div class="calendar_item">
-        <div class="image_wrapper">
-          <div class="image">
-            <img src="{% thumbnail item.image 400x400 %}">
+      <a href="{{item.href}}">
+        <div class="calendar_item">
+          <div class="image_wrapper">
+            <div class="image">
+              <img src="{% thumbnail item.image 400x400 %}">
+            </div>
           </div>
-        </div>
 
-        <div class="datetime">
-          {{item.date}} <small>{{item.time}}</small>
-        </div>
-
-        <div class="title">
-          <h2>
-            {{item.title}} <small>- {{item.initiative}}</small>
-          </h2>
-        </div>
-
-        <div class="subscript">
-          {{item.subscript}}
-        </div>
-
-        <div class="location">
-          {{item.location}}
-        </div>
-
-        {% if item.href %}
-          <div class="button">
-            <a href="{{item.href}}">Lees meer</a>
+          <div class="datetime">
+            {{item.date}} <small>{{item.time}}</small>
           </div>
-        {% endif %}
 
-        {% editsection '<img src="/static/cms/edit.png">' %}
-      </div>
+          <div class="title">
+            <h2>
+              {{item.title}} <small>- {{item.initiative}}</small>
+            </h2>
+          </div>
+
+          <div class="subscript">
+            {{item.subscript}}
+          </div>
+
+          <div class="location">
+            {{item.location}}
+          </div>
+
+          {% editsection '<img src="/static/cms/edit.png">' %}
+        </div>
+      </a>
     {% endfor %}
 </section>

@@ -286,9 +286,16 @@ section.teasers {
         font-size: 2.5em; }
 
 section.calendar div.wrapper {
-  max-width: none;
-  padding: 0;
-  margin: 0; }
+  max-width: 960px;
+  padding: 0; }
+  section.calendar div.wrapper a {
+    text-decoration: none; }
+  section.calendar div.wrapper a:nth-child(odd) div.calendar_item {
+    background: #ed7a96;
+    color: white; }
+    section.calendar div.wrapper a:nth-child(odd) div.calendar_item div.location {
+      background: white;
+      color: #ed7a96; }
   section.calendar div.wrapper div.calendar_item {
     position: relative;
     background: white;
@@ -299,12 +306,6 @@ section.calendar div.wrapper {
     padding: 1em;
     padding-left: calc(200px + 2em);
     min-height: 113px; }
-    section.calendar div.wrapper div.calendar_item:nth-child(odd) {
-      background: #ed7a96;
-      color: white; }
-      section.calendar div.wrapper div.calendar_item:nth-child(odd) div.location {
-        background: white;
-        color: #ed7a96; }
     section.calendar div.wrapper div.calendar_item div.image_wrapper {
       width: 200px;
       position: absolute;
@@ -419,4 +420,4 @@ footer {
   font-weight: bold;
   src: url("Rubik_500.woff") format("woff"); }
 
-/*# sourceMappingURL=main8.scss.css.map */
+/*# sourceMappingURL=main9.scss.css.map */
