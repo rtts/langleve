@@ -473,25 +473,31 @@ section.images {
   padding: 1rem 0;
 
   div.images {
-    div.image {
-      width: 700px;
-      height: 466px;
-      position: relative;
-      box-sizing: border-box;
+    div.image-wrapper {
+      width: 100%;
 
-      @media(max-width: $medium) {
-        width: 100%;
-        height: 0;
-        padding-bottom: 66%;
-      }
+      div.image {
+        margin: auto;
+        width: calc(700px - 2em);
+        height: 466px;
+        position: relative;
+        box-sizing: border-box;
+        position: relative;
 
-      img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        object-fit: cover;
+        @media(max-width: $medium) {
+          width: 100%;
+          height: 0;
+          padding-bottom: 66%;
+        }
+
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          object-fit: cover;
+        }
       }
     }
   }

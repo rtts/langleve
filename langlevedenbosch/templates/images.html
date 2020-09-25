@@ -3,8 +3,10 @@
 <section class="images">
   <div class="images" data-flickity='{ "wrapAround": true, "autoPlay": 5000, "imagesLoaded": true }'>
     {% for image in section.images.all %}
-      <div class="image">
-        <img src="{% thumbnail image.image 700x700 %}">
+      <div class="image-wrapper">
+        <div class="image">
+          <img src="{% thumbnail image.image 700x700 %}">
+        </div>
       </div>
     {% endfor %}
   </div>

@@ -357,23 +357,27 @@ section.calendar div.wrapper {
 
 section.images {
   padding: 1rem 0; }
-  section.images div.images div.image {
-    width: 700px;
-    height: 466px;
-    position: relative;
-    box-sizing: border-box; }
-    @media (max-width: 800px) {
-      section.images div.images div.image {
+  section.images div.images div.image-wrapper {
+    width: 100%; }
+    section.images div.images div.image-wrapper div.image {
+      margin: auto;
+      width: calc(700px - 2em);
+      height: 466px;
+      position: relative;
+      box-sizing: border-box;
+      position: relative; }
+      @media (max-width: 800px) {
+        section.images div.images div.image-wrapper div.image {
+          width: 100%;
+          height: 0;
+          padding-bottom: 66%; } }
+      section.images div.images div.image-wrapper div.image img {
+        position: absolute;
         width: 100%;
-        height: 0;
-        padding-bottom: 66%; } }
-    section.images div.images div.image img {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      object-fit: cover; }
+        height: 100%;
+        left: 0;
+        top: 0;
+        object-fit: cover; }
 
 section.contact div.message {
   display: none; }
