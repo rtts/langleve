@@ -1,6 +1,8 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
-from cms.models import BasePage, BaseSection, Numbered, VarCharField
+from cms.models import BasePage, BaseSection
+from cms.mixins import Numbered
+from cms.fields import CharField
 from cms.decorators import page_model, section_model
 
 @page_model
@@ -27,25 +29,25 @@ class SectionImage(models.Model):
 
 class SectionTeaser(models.Model):
     section = models.ForeignKey(Section, related_name='teasers', on_delete=models.CASCADE)
-    title = VarCharField('titel')
+    title = CharField('titel')
     image = models.ImageField(_('image'), blank=True)
     content = models.TextField(_('content'), blank=True)
-    href = VarCharField(_('link'), blank=True)
+    href = CharField(_('link'), blank=True)
 
     class Meta:
         ordering = ['?']
 
 class SectionCalendar(Numbered, models.Model):
     section = models.ForeignKey(Section, related_name='calendar_items', on_delete=models.CASCADE)
-    title = VarCharField('titel')
-    initiative = VarCharField('naam initiatief')
+    title = CharField('titel')
+    initiative = CharField('naam initiatief')
     position = models.PositiveIntegerField('positie', blank=True)
-    date = VarCharField('datum')
-    time = VarCharField('tijd')
-    subscript = VarCharField('onderschrift')
-    location = VarCharField('locatie')
+    date = CharField('datum')
+    time = CharField('tijd')
+    subscript = CharField('onderschrift')
+    location = CharField('locatie')
     image = models.ImageField(_('image'), blank=True)
-    href = VarCharField(_('link'), blank=True)
+    href = CharField(_('link'), blank=True)
 
     def number_with_respect_to(self):
         return self.section.calendar_items.all()

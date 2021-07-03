@@ -9,6 +9,7 @@ DEFAULT_TO_EMAIL = ['malou@academievoorbeeldvorming.nl', 'monique@academievoorbe
 ALLOWED_HOSTS = ['*']
 ROOT_URLCONF = PROJECT_NAME + '.urls'
 WSGI_APPLICATION = PROJECT_NAME + '.wsgi.application'
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LANGUAGE_CODE = 'nl'
 TIME_ZONE = 'Europe/Amsterdam'
 USE_I18N = True
