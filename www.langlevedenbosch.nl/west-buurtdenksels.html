@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://langlevedenbosch.nl/static/favicon.png">
+    <link rel="stylesheet" href="static/main.scss.css%3F2.css">
+    <link rel="stylesheet" href="static/hamburgers.css">
+    <link rel="stylesheet" href="static/flickity.css">
+    <title>
+      Lang Leve...! Den Bosch - west-buurtdenksels
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="index.html"><img width="193" height="150" src="static/logo.svg" alt=
+        "Lang Leve...!"></a>
+      </h1>
+
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="zuid/index.html">Terugblik manifestatie Zuid</a>
+          </li>
+
+          <li>
+            <a href="west/index.html">Terugblik manifestatie West</a>
+          </li>
+
+          <li>
+            <a href="fotografie/index.html">Fotografie</a>
+          </li>
+
+          <li>
+            <a href="over/index.html">Over Lang Leve...!</a>
+          </li>
+
+          <li>
+            <a href="contact/index.html">Contact</a>
+          </li>
+        </ul>
+        <button class="hamburger hamburger--collapse" id=
+        'hamburger'><span class="hamburger-box"><span class=
+        "hamburger-inner"></span></span></button>
+      </nav>
+    </header>
+
+    <article>
+      <section class="images">
+        <div class="images" data-flickity=
+        '{ "wrapAround": true, "autoPlay": 5000, "imagesLoaded": true }'>
+          <div class="image-wrapper">
+            <div class="image">
+              <img src="media/image00001_ShRznpo.jpeg.700x700_q85.jpg">
+            </div>
+          </div>
+
+          <div class="image-wrapper">
+            <div class="image">
+              <img src=
+              "media/WhatsApp_Image_2020-10-26_at_10.27.44.jpeg.700x700_q85.jpg">
+            </div>
+          </div>
+
+          <div class="image-wrapper">
+            <div class="image">
+              <img src=
+              "media/WhatsApp_Image_2020-11-02_at_12.19.41.jpeg.700x700_q85.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text">
+        <div class="wrapper">
+          <div class="title">
+            <h1>
+              buurtDE(N)KSELS
+            </h1>
+          </div>
+
+          <div class="content">
+            <p>
+              Voortbordurend op de actie in Zuid is buurtDE(N)KSELS verschenen
+              op de grasvelden bij flats aan de Hudsonlaan. Marianne van
+              Heeswijk: “Het rondje dat we vooraf gezamenlijk door de wijk
+              liepen samen met wijkwerker Benthe, heeft erg geholpen bij het
+              vinden van een goede locatie. Wij zijn ook hier deur aan deur
+              langsgegaan, soms ook over de drempel. We hebben behoeftes nog
+              explicieter opgehaald en bijvoorbeeld bewoners aan elkaar
+              gekoppeld die graag wandelen. Via de placemats zijn de
+              boodschappen ook weer teruggebracht. Een mooi citaat dat we
+              ontvingen, was: every night we try to take over the world.”
+            </p>
+
+            <p>
+              Naast de vele positieve reacties maakte de actie ook weerstand
+              zichtbaar. “Soms vonden mensen het te privé dat je aanbelde, of
+              zagen ze dit project als een geitenwollensokken-incident dat
+              alleen maar geld kost.” Je moet echt vertrouwen winnen. Farent
+              kan daarin ook iets betekenen omdat zij langdurig in de wijk
+              aanwezig zijn.
+            </p>
+
+            <p>
+              <b>OVER BUURTDE(N)KSELS</b>
+            </p>
+
+            <p>
+              Onder het motto ‘Beter een goede buur dan een verre vriend’
+              nodigden we bewoners, interactief vanaf hun balkon, uit voor ons
+              project buurtDE(N)KSELS.
+            </p>
+
+            <p>
+              Op 24 oktober legden we op het gras de woorden van het lied van
+              Ramses Shaffy: ZING, VECHT, HUIL, BID, LACH, WERK en BEWONDER en
+              een groot hart van rode deksels. Het hart bestond uit ‘denksels’,
+              gedachten van buurtgenoten. Het weekend daarop kregen bewoners
+              placemats terug met daarop hun teksten. Hartverwarmend!
+            </p>
+
+            <p>
+              <b>Waar:</b> op het grasveld voor de flats bij de Hudsonlaan<br>
+              <b>Organisatie:</b> Stichting Ik Sta Voor<br>
+              <b>Meer info:</b> <a href="http://www.ikstavoor.nl" target=
+              "_blank">www.ikstavoor.nl</a><br>
+            </p>
+
+            <p>
+              📸 Andaleeb Khaliffa
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <img width="154" height="150" src="static/avb.svg" alt=
+      "Academie voor Beeldvorming"><br>
+      © <a href="https://www.academievoorbeeldvorming.nl/">Academie voor
+      Beeldvorming</a>. 2024
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+          var hamburger = document.getElementById('hamburger');
+          var menu = document.getElementById('menu');
+          hamburger.addEventListener('click', function(e) {
+              hamburger.classList.toggle('is-active');
+              menu.classList.toggle('visible');
+          });
+
+          var links = document.querySelectorAll('a');
+          for (var link of links) {
+              var a = new RegExp('/' + window.location.host + '/');
+              if (!a.test(link.href)) {
+                  link.addEventListener('click', function(event) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      window.open(this.href, '_blank');
+                  });
+              }
+          }
+      });
+    </script> 
+    <script src="static/flickity.pkgd.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://langlevedenbosch.nl/static/favicon.png">
+    <link rel="stylesheet" href="static/main.scss.css%3F2.css">
+    <link rel="stylesheet" href="static/hamburgers.css">
+    <link rel="stylesheet" href="static/flickity.css">
+    <title>
+      Lang Leve...! Den Bosch - Proefles Jeu de Boules
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="index.html"><img width="193" height="150" src="static/logo.svg" alt=
+        "Lang Leve...!"></a>
+      </h1>
+
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="zuid/index.html">Terugblik manifestatie Zuid</a>
+          </li>
+
+          <li>
+            <a href="west/index.html">Terugblik manifestatie West</a>
+          </li>
+
+          <li>
+            <a href="fotografie/index.html">Fotografie</a>
+          </li>
+
+          <li>
+            <a href="over/index.html">Over Lang Leve...!</a>
+          </li>
+
+          <li>
+            <a href="contact/index.html">Contact</a>
+          </li>
+        </ul>
+        <button class="hamburger hamburger--collapse" id=
+        'hamburger'><span class="hamburger-box"><span class=
+        "hamburger-inner"></span></span></button>
+      </nav>
+    </header>
+
+    <article>
+      <section class="images">
+        <div class="images" data-flickity=
+        '{ "wrapAround": true, "autoPlay": 5000, "imagesLoaded": true }'>
+          <div class="image-wrapper">
+            <div class="image">
+              <img src=
+              "media/Screen_Shot_2021-01-05_at_13.29.23.png.700x700_q85.png">
+            </div>
+          </div>
+
+          <div class="image-wrapper">
+            <div class="image">
+              <img src=
+              "media/Screen_Shot_2021-01-05_at_13.30.00.png.700x700_q85.png">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text">
+        <div class="wrapper">
+          <div class="title">
+            <h1>
+              Proefles Jeu de Boules
+            </h1>
+          </div>
+
+          <div class="content">
+            <p>
+              Organisator Dewi van Maaren van ‘S-PORT: “De balkonbeweeglessen
+              die ik wilde organiseren, konden vanwege gebruik van muziek niet
+              doorgaan. We konden nog wel een proefles jeu de boules doen met
+              een aantal mensen, wat erg leuk was.”
+            </p>
+
+            <p>
+              <b>OVER PROEFLES JEU DE BOULES</b>
+            </p>
+
+            <p>
+              Gezellig een potje Jeu de Boules! Een goede reden om naar buiten
+              te gaan en op afstand elkaar te ontmoeten. Een clubje
+              actievelingen zijn wekelijks aanwezig op de baan en komen samen
+              om te spelen.
+            </p>
+
+            <p>
+              Kom een proefles volgen om dit te ervaren. In 2022 vinden de
+              Wereldkampioenschappen plaats in ’s-Hertogenbosch. Wie weet sta
+              jij hier dan ook?! Het is een gezellige sport, toegankelijk voor
+              iedereen.
+            </p>
+
+            <p>
+              De proeflessen vonden plaats op dinsdag 27 en woensdag 28
+              oktober.<br>
+              <br>
+            </p>
+
+            <p>
+              <b>Waar:</b> naast de Tennisvereniging de Schutskamp<br>
+              <b>Organisatie:</b> Jeu de Boulesvereniging But Vrij<br>
+              <b>Aanmelden:</b> bel Dewi van Maaren op 06-22511929 of mail naar
+              d.vanmaaren@s-hertogenbosch.nl<br>
+              <b>Meer info:</b> <a href="https://langlevedenbosch.nl/west-jeudeboules/www.s-port.nl" target=
+              "_blank">www.s-port.nl</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <img width="154" height="150" src="static/avb.svg" alt=
+      "Academie voor Beeldvorming"><br>
+      © <a href="https://www.academievoorbeeldvorming.nl/">Academie voor
+      Beeldvorming</a>. 2024
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+          var hamburger = document.getElementById('hamburger');
+          var menu = document.getElementById('menu');
+          hamburger.addEventListener('click', function(e) {
+              hamburger.classList.toggle('is-active');
+              menu.classList.toggle('visible');
+          });
+
+          var links = document.querySelectorAll('a');
+          for (var link of links) {
+              var a = new RegExp('/' + window.location.host + '/');
+              if (!a.test(link.href)) {
+                  link.addEventListener('click', function(event) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      window.open(this.href, '_blank');
+                  });
+              }
+          }
+      });
+    </script> 
+    <script src="static/flickity.pkgd.min.js"></script>
+  </body>
+</html>

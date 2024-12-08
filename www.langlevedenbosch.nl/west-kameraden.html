@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://langlevedenbosch.nl/static/favicon.png">
+    <link rel="stylesheet" href="static/main.scss.css%3F2.css">
+    <link rel="stylesheet" href="static/hamburgers.css">
+    <link rel="stylesheet" href="static/flickity.css">
+    <title>
+      Lang Leve...! Den Bosch - west-kameraden
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="index.html"><img width="193" height="150" src="static/logo.svg" alt=
+        "Lang Leve...!"></a>
+      </h1>
+
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="zuid/index.html">Terugblik manifestatie Zuid</a>
+          </li>
+
+          <li>
+            <a href="west/index.html">Terugblik manifestatie West</a>
+          </li>
+
+          <li>
+            <a href="fotografie/index.html">Fotografie</a>
+          </li>
+
+          <li>
+            <a href="over/index.html">Over Lang Leve...!</a>
+          </li>
+
+          <li>
+            <a href="contact/index.html">Contact</a>
+          </li>
+        </ul>
+        <button class="hamburger hamburger--collapse" id=
+        'hamburger'><span class="hamburger-box"><span class=
+        "hamburger-inner"></span></span></button>
+      </nav>
+    </header>
+
+    <article>
+      <section class="images">
+        <div class="images" data-flickity=
+        '{ "wrapAround": true, "autoPlay": 5000, "imagesLoaded": true }'>
+          <div class="image-wrapper">
+            <div class="image">
+              <img src=
+              "media/WhatsApp_Image_2020-10-15_at_21.16.21_yij4nbP.jpeg.700x700_q85.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text">
+        <div class="wrapper">
+          <div class="title">
+            <h1>
+              TV Kameraden
+            </h1>
+          </div>
+
+          <div class="content">
+            <p>
+              Na de manifestatie in West kijkt Rob van Doleweerd van Kameraden
+              terug: “Er is veel behoefte aan duurzaam intergenerationeel
+              contact. Met wijkwerker Benthe hebben we gekeken of we, lokaal,
+              jongeren met ouderen kunnen verbinden. Dit doen we op basis van
+              interesses en kennis, zodat leeftijd minder belangrijk is en er
+              meer kans is op zinvol en duurzaam contact. We gaan nu een
+              weduwnaar met een passie voor fotografie koppelen aan een jongere
+              die dat graag wil leren.”
+            </p>
+
+            <p>
+              <b>OVER TV KAMERADEN</b>
+            </p>
+
+            <p>
+              Kijk op afstand, beleef het samen!
+            </p>
+
+            <p>
+              Op een laagdrempelige manier verbindt Kameraden jong en oud, ook
+              in deze tijd. Alles wat je nodig hebt om mee te doen, is een tv
+              en een telefoon!
+            </p>
+
+            <p>
+              Tv kijken wordt leuker, interessanter en socialer. Jongeren en
+              ouderen bekijken samen tegelijkertijd programma’s, series en
+              films, ieder in hun eigen huis. Van sport tot cultuur en van
+              politiek tot romantische komedies: zij bepalen wat ze kijken.
+              Naderhand kunnen ze het nabespreken. Kameraden zorgt voor de
+              match met andere gelijkgestemden en geeft regelmatig kijktips.
+            </p>
+
+            <p>
+              <b>Hoe werkt het?</b><br>
+              <br>
+              1: Meld je aan door een mail te sturen naar info@kameraden.nl met
+              wat info over jezelf, of bel naar 073-2020979.<br>
+              <br>
+              2: Kameraden matcht de verschillende generaties met elkaar (al
+              dan niet op basis van interesses). Kameraden zorgt ervoor dat
+              jullie met elkaar in contact komen.<br>
+              <br>
+              2: Jullie kijken tegelijkertijd thuis naar hetzelfde programma.
+              Kies zelf een online theatervoorstelling, film of documentaire
+              uit. Netflix of culturele uitzending van een van onze culturele
+              partners? Dat bepalen jullie zelf!<br>
+              <br>
+              3: Na afloop bellen jullie met elkaar om gezellig na te
+              praten.<br>
+              <br>
+            </p>
+
+            <p>
+              <b>Wanneer:</b> doorlopend<br>
+              <b>Waar:</b> bij jou thuis<br>
+              <b>Organisatie:</b> Kameraden<br>
+              <b>Meer info:</b> <a href=
+              "http://www.kameraden.nl">www.kameraden.nl</a>
+            </p>
+
+            <p>
+              📸 Kameraden
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <img width="154" height="150" src="static/avb.svg" alt=
+      "Academie voor Beeldvorming"><br>
+      © <a href="https://www.academievoorbeeldvorming.nl/">Academie voor
+      Beeldvorming</a>. 2024
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+          var hamburger = document.getElementById('hamburger');
+          var menu = document.getElementById('menu');
+          hamburger.addEventListener('click', function(e) {
+              hamburger.classList.toggle('is-active');
+              menu.classList.toggle('visible');
+          });
+
+          var links = document.querySelectorAll('a');
+          for (var link of links) {
+              var a = new RegExp('/' + window.location.host + '/');
+              if (!a.test(link.href)) {
+                  link.addEventListener('click', function(event) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      window.open(this.href, '_blank');
+                  });
+              }
+          }
+      });
+    </script> 
+    <script src="static/flickity.pkgd.min.js"></script>
+  </body>
+</html>

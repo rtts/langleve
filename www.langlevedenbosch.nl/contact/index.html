@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://langlevedenbosch.nl/static/favicon.png">
+    <link rel="stylesheet" href="../static/main.scss.css%3F2.css">
+    <link rel="stylesheet" href="../static/hamburgers.css">
+    <link rel="stylesheet" href="../static/flickity.css">
+    <title>
+      Lang Leve...! Den Bosch - Contact
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="../index.html"><img width="193" height="150" src="../static/logo.svg" alt=
+        "Lang Leve...!"></a>
+      </h1>
+
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="../zuid/index.html">Terugblik manifestatie Zuid</a>
+          </li>
+
+          <li>
+            <a href="../west/index.html">Terugblik manifestatie West</a>
+          </li>
+
+          <li>
+            <a href="../fotografie/index.html">Fotografie</a>
+          </li>
+
+          <li>
+            <a href="../over/index.html">Over Lang Leve...!</a>
+          </li>
+
+          <li>
+            <a href="index.html" class="current">Contact</a>
+          </li>
+        </ul>
+        <button class="hamburger hamburger--collapse" id=
+        'hamburger'><span class="hamburger-box"><span class=
+        "hamburger-inner"></span></span></button>
+      </nav>
+    </header>
+
+    <article>
+      <section class="header_small">
+        <div class="wrapper">
+          <img src="../static/heart.svg"> <a href="../index.html">
+          <h1>
+            Lang Leve...!
+          </h1>
+
+          <h2>
+            Den Bosch
+          </h2></a>
+        </div>
+      </section>
+
+      <section class="text">
+        <div class="wrapper">
+          <div class="title">
+            <h1>
+              Contact
+            </h1>
+          </div>
+
+          <div class="content">
+            <p>
+              <br>
+              Heb je vragen over de programma’s van de manifestatie op Zuid of
+              in West? Contacteer de organisatie die bij het
+              programma-onderdeel genoemd wordt.
+            </p>
+
+            <p>
+              Heb je vragen over het actieonderzoek Lang Leve…!? Neem contact
+              op met Klaas Burger, artistiek leider van de Academie voor
+              Beeldvorming: klaas@academievoorbeeldvorming.nl
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="wrapper">
+          <div class="title">
+            <h1>
+              Stuur ons een bericht!
+            </h1>
+          </div>
+
+          <div class="form">
+            <form method="post" class="cms">
+              <input type="hidden" name="csrfmiddlewaretoken" value=
+              "djusYgzEeZ13yIAPvIn5PS408kEclxWI1EKlHoWkO15ZwoU3q68xeokShtvAn8Sh">
+              <div class="formfield sender" id="formfield_sender">
+                <div class="label">
+                  <label for="id_sender">Uw email adres:</label>
+                </div>
+
+                <div class="input">
+                  <input type="email" name="sender" required="" id="id_sender">
+                </div>
+              </div>
+
+              <div class="formfield spam_protection" id=
+              "formfield_spam_protection">
+                <div class="label">
+                  <label for="id_spam_protection">Uw bericht:</label>
+                </div>
+
+                <div class="input">
+                  <textarea name="spam_protection" cols="40" rows="10"
+                  required="" id="id_spam_protection"></textarea>
+                </div>
+              </div>
+
+              <div class="formfield message" id="formfield_message">
+                <div class="label">
+                  <label for="id_message">Uw bericht:</label>
+                </div>
+
+                <div class="input">
+                  <textarea name="message" cols="40" rows="10" required="" id=
+                  "id_message">Hi there!</textarea>
+                </div>
+              </div>
+
+              <div class="spacer">
+              </div>
+              <button class="button" name="section" value=
+              "1">Verzenden</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <img width="154" height="150" src="../static/avb.svg" alt=
+      "Academie voor Beeldvorming"><br>
+      © <a href="https://www.academievoorbeeldvorming.nl/">Academie voor
+      Beeldvorming</a>. 2024
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+          var hamburger = document.getElementById('hamburger');
+          var menu = document.getElementById('menu');
+          hamburger.addEventListener('click', function(e) {
+              hamburger.classList.toggle('is-active');
+              menu.classList.toggle('visible');
+          });
+
+          var links = document.querySelectorAll('a');
+          for (var link of links) {
+              var a = new RegExp('/' + window.location.host + '/');
+              if (!a.test(link.href)) {
+                  link.addEventListener('click', function(event) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      window.open(this.href, '_blank');
+                  });
+              }
+          }
+      });
+    </script> 
+    <script src="../static/flickity.pkgd.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://langlevedenbosch.nl/static/favicon.png">
+    <link rel="stylesheet" href="static/main.scss.css%3F2.css">
+    <link rel="stylesheet" href="static/hamburgers.css">
+    <link rel="stylesheet" href="static/flickity.css">
+    <title>
+      Lang Leve...! Den Bosch - Buurtde(n)ksel
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="index.html"><img width="193" height="150" src="static/logo.svg" alt=
+        "Lang Leve...!"></a>
+      </h1>
+
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="zuid/index.html">Terugblik manifestatie Zuid</a>
+          </li>
+
+          <li>
+            <a href="west/index.html">Terugblik manifestatie West</a>
+          </li>
+
+          <li>
+            <a href="fotografie/index.html">Fotografie</a>
+          </li>
+
+          <li>
+            <a href="over/index.html">Over Lang Leve...!</a>
+          </li>
+
+          <li>
+            <a href="contact/index.html">Contact</a>
+          </li>
+        </ul>
+        <button class="hamburger hamburger--collapse" id=
+        'hamburger'><span class="hamburger-box"><span class=
+        "hamburger-inner"></span></span></button>
+      </nav>
+    </header>
+
+    <article>
+      <section class="header_small">
+        <div class="wrapper">
+          <img src="static/heart.svg"> <a href="index.html">
+          <h1>
+            Lang Leve...!
+          </h1>
+
+          <h2>
+            Den Bosch
+          </h2></a>
+        </div>
+      </section>
+
+      <section class="images">
+        <div class="images" data-flickity=
+        '{ "wrapAround": true, "autoPlay": 5000, "imagesLoaded": true }'>
+          <div class="image-wrapper">
+            <div class="image">
+              <img src=
+              "media/106194387_157833349194790_8872113440476083338_o_fNHhE7b.jpg.700x700_q85.jpg">
+            </div>
+          </div>
+
+          <div class="image-wrapper">
+            <div class="image">
+              <img src=
+              "media/106126256_157833155861476_2023481395458681141_o_RaRseM6.jpg.700x700_q85.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text">
+        <div class="wrapper">
+          <div class="title">
+            <h1>
+              buurtDE(N)KSELS
+            </h1>
+          </div>
+
+          <div class="content">
+            <p>
+              Kunstenaars <a href="http://www.villavanheeswijk.nl" target=
+              "_blank">Marianne van Heeswijk</a> en Birgitta Hermans zochten
+              met de vrijwilligersgroep achter <a href=
+              "https://www.facebook.com/TapijtvoorVrede/" target=
+              "_blank">Tapijt voor Vrede</a> naar een communicatievorm die past
+              bij de anderhalvemetersamenleving.
+            </p>
+
+            <p>
+              “We hebben bij 80 deuren aangebeld in een flatcomplex op Zuid.
+              Onze vrijwilligers gaven een stift en een deksel en vroegen om te
+              associëren op het lied van Ramses Shaffy: ‘Zing, vecht, huil,
+              bid, lach, werk en bewonder…’ Gedachten zijn op de deksels
+              geschreven. Daarna nodigden we iedereen uit om het deksel als een
+              frisbee van het balkon naar ons toe te gooien.” Het lied werd
+              live gezongen en met de deksels is een hart gelegd plus de tekst
+              van het lied.
+            </p>
+
+            <p>
+              “Een bewoner vroeg wie wilde meedoen in de huurdersvereniging.
+              Iemand gaf aan graag meer bezoek van buurtbewoners te krijgen.”
+              Van foto’s van de deksels worden placemats gemaakt. Deze worden
+              teruggebracht naar de 80 adressen. “De deksels groeien zo uit tot
+              een communicatiemiddel tussen de bewoners. En: een Armeens gezin
+              wil koken en dansen op het veld tussen de huizen. De voorzitter
+              van de bewonersvereniging gaat nu subsidie aanvragen voor een
+              eerste wijkfeest.”
+            </p>
+
+            <p>
+              <a href=
+              "https://dtvnieuws.nl/nieuws/artikel/groot-hart-en-ramses-shaffy-lied-bij-flats-in-den-bosch-zuid"
+              target="_blank">Zie hier artikel op DTV nieuws voor een impressie
+              van de actie.</a><br>
+              <br>
+              <b>OVER buurtDE(N)KSELS</b>
+            </p>
+
+            <p>
+              Het project buurtDE(N)KSELS gaat op een interactieve manier de
+              dialoog aan met flatbewoners. Vanuit het hart willen ze tot
+              gezamenlijke bewustwording komen over onze menselijke waardigheid
+              in deze crisistijd. Vanuit het gevoel én in onderlinge
+              betrokkenheid met de buren.
+            </p>
+
+            <p>
+              De bekende tekst van Ramses Shaffy vormt de basis van het
+              project:<br>
+              ZING, VECHT, HUIL, BID, LACH, WERK en BEWONDER.<br>
+              <br>
+              📸 Andaleeb Khaliffa
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <img width="154" height="150" src="static/avb.svg" alt=
+      "Academie voor Beeldvorming"><br>
+      © <a href="https://www.academievoorbeeldvorming.nl/">Academie voor
+      Beeldvorming</a>. 2024
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+          var hamburger = document.getElementById('hamburger');
+          var menu = document.getElementById('menu');
+          hamburger.addEventListener('click', function(e) {
+              hamburger.classList.toggle('is-active');
+              menu.classList.toggle('visible');
+          });
+
+          var links = document.querySelectorAll('a');
+          for (var link of links) {
+              var a = new RegExp('/' + window.location.host + '/');
+              if (!a.test(link.href)) {
+                  link.addEventListener('click', function(event) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      window.open(this.href, '_blank');
+                  });
+              }
+          }
+      });
+    </script> 
+    <script src="static/flickity.pkgd.min.js"></script>
+  </body>
+</html>

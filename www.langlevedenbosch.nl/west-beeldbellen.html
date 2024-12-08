@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://langlevedenbosch.nl/static/favicon.png">
+    <link rel="stylesheet" href="static/main.scss.css%3F2.css">
+    <link rel="stylesheet" href="static/hamburgers.css">
+    <link rel="stylesheet" href="static/flickity.css">
+    <title>
+      Lang Leve...! Den Bosch - Beeldbellen
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="index.html"><img width="193" height="150" src="static/logo.svg" alt=
+        "Lang Leve...!"></a>
+      </h1>
+
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="zuid/index.html">Terugblik manifestatie Zuid</a>
+          </li>
+
+          <li>
+            <a href="west/index.html">Terugblik manifestatie West</a>
+          </li>
+
+          <li>
+            <a href="fotografie/index.html">Fotografie</a>
+          </li>
+
+          <li>
+            <a href="over/index.html">Over Lang Leve...!</a>
+          </li>
+
+          <li>
+            <a href="contact/index.html">Contact</a>
+          </li>
+        </ul>
+        <button class="hamburger hamburger--collapse" id=
+        'hamburger'><span class="hamburger-box"><span class=
+        "hamburger-inner"></span></span></button>
+      </nav>
+    </header>
+
+    <article>
+      <section class="header_small">
+        <div class="wrapper">
+          <img src="static/heart.svg"> <a href="index.html">
+          <h1>
+            Lang Leve...!
+          </h1>
+
+          <h2>
+            Den Bosch
+          </h2></a>
+        </div>
+      </section>
+
+      <section class="images">
+        <div class="images" data-flickity=
+        '{ "wrapAround": true, "autoPlay": 5000, "imagesLoaded": true }'>
+          <div class="image-wrapper">
+            <div class="image">
+              <img src="media/Beeldbellen_hallo3_1dP1jKj.jpg.700x700_q85.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text">
+        <div class="wrapper">
+          <div class="title">
+            <h1>
+              Beeldbellen
+            </h1>
+          </div>
+
+          <div class="content">
+            <p>
+              Anita Putters van Farent blikt terug: “We hebben in West niet
+              zoveel aanvragen gehad voor de cursus beeldbellen. De buurthuizen
+              gingen dicht. De vraag blijft dan achter.” En er spelen
+              vooroordelen. “Ouderen met een migratie-achtergrond kunnen heel
+              goed videobellen. Dat doen ze allemaal met familie in het
+              buitenland! Hier vind je dus geen cursisten, maar trainers! Maar
+              ja, hoe zorg je dat deze mensen ook trainer willen worden?”
+            </p>
+
+            <p>
+              <b>OVER BEELDBELLEN</b>
+            </p>
+
+            <p>
+              Mantelzorg Farent en Ouderenwerk Farent bieden hulp bij het
+              beeldbellen door de inzet van vrijwilligers.
+            </p>
+
+            <p>
+              Heb je een mobieltje, computer of tablet en weet je niet hoe het
+              beeldbellen precies werkt? Of je nu wilt beeldbellen via Whats
+              app, FaceTime of Zoom, Farent heeft vrijwilligers die je graag
+              hierbij helpen.
+            </p>
+
+            <p>
+              In een kleine groep in jouw wijk of individueel, alles is
+              mogelijk. Bij het aanmelden kun je aangeven wat jouw voorkeur
+              heeft en of je partner / mantelzorger ook deelneemt.
+            </p>
+
+            <p>
+              Heb je nog geen telefoon of tablet om te beeldbellen?<br>
+              Wellicht hebben we daar ook een oplossing voor.
+            </p>
+
+            <p>
+              <b>Wanneer:</b> wanneer het jou uitkomt!<br>
+              <b>Waar:</b> bij jou thuis<br>
+              <b>Organisatie:</b> Farent<br>
+              <b>Aanmelden:</b> beeldbellen@farent.nl<br>
+              <b>Meer info:</b> Bel Anita Putters (06-467 68 1 18) of Akkie de
+              Rouw (06-435 587 03)
+            </p>
+
+            <p>
+              Beeldbellen is een gezamenlijk project van Huis73, Senior Web,
+              Seniorenplatform, HCC computerclub Maaspoort, De Biechten Actieve
+              Senioren, Kerngroep Aanpak Eenzaamheid, De Westhoek, Van Neynsel,
+              Crew against Corona, gemeente ’s-Hertogenbosch en <a href=
+              "http://www.farent.nl" target="_blank">Farent</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <img width="154" height="150" src="static/avb.svg" alt=
+      "Academie voor Beeldvorming"><br>
+      © <a href="https://www.academievoorbeeldvorming.nl/">Academie voor
+      Beeldvorming</a>. 2024
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+          var hamburger = document.getElementById('hamburger');
+          var menu = document.getElementById('menu');
+          hamburger.addEventListener('click', function(e) {
+              hamburger.classList.toggle('is-active');
+              menu.classList.toggle('visible');
+          });
+
+          var links = document.querySelectorAll('a');
+          for (var link of links) {
+              var a = new RegExp('/' + window.location.host + '/');
+              if (!a.test(link.href)) {
+                  link.addEventListener('click', function(event) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      window.open(this.href, '_blank');
+                  });
+              }
+          }
+      });
+    </script> 
+    <script src="static/flickity.pkgd.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://langlevedenbosch.nl/static/favicon.png">
+    <link rel="stylesheet" href="static/main.scss.css%3F2.css">
+    <link rel="stylesheet" href="static/hamburgers.css">
+    <link rel="stylesheet" href="static/flickity.css">
+    <title>
+      Lang Leve...! Den Bosch - dancealongparties
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="index.html"><img width="193" height="150" src="static/logo.svg" alt=
+        "Lang Leve...!"></a>
+      </h1>
+
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="zuid/index.html">Terugblik manifestatie Zuid</a>
+          </li>
+
+          <li>
+            <a href="west/index.html">Terugblik manifestatie West</a>
+          </li>
+
+          <li>
+            <a href="fotografie/index.html">Fotografie</a>
+          </li>
+
+          <li>
+            <a href="over/index.html">Over Lang Leve...!</a>
+          </li>
+
+          <li>
+            <a href="contact/index.html">Contact</a>
+          </li>
+        </ul>
+        <button class="hamburger hamburger--collapse" id=
+        'hamburger'><span class="hamburger-box"><span class=
+        "hamburger-inner"></span></span></button>
+      </nav>
+    </header>
+
+    <article>
+      <section class="images">
+        <div class="images" data-flickity=
+        '{ "wrapAround": true, "autoPlay": 5000, "imagesLoaded": true }'>
+          <div class="image-wrapper">
+            <div class="image">
+              <img src=
+              "media/SS_20200629_LangLeve_minoux_08_jsNETJb.jpg.700x700_q85.jpg">
+            </div>
+          </div>
+
+          <div class="image-wrapper">
+            <div class="image">
+              <img src=
+              "media/SS_20200629_LangLeve_minoux_04_qVM0SMZ.jpg.700x700_q85.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text">
+        <div class="wrapper">
+          <div class="title">
+            <h1>
+              Dance Along Parties
+            </h1>
+          </div>
+
+          <div class="content">
+            <p>
+              <a href="https://www.minoux.nl">Minoux</a> vierde de Dance Along
+              Party op 29 juni op twee grasvelden bij appartementencomplexen.
+              “De groep ouderen die de Dance Along Party uitvoert is heel
+              levendig. Mensen vinden makkelijk aansluiting. Tijdens de
+              Coronacrisis hebben we in een appgroep contact gehouden. Dit was
+              sindsdien ons eerste optreden.”
+            </p>
+
+            <p>
+              “En dan sta je daar met z’n allen voor een serviceflat. Eén vrouw
+              op een balkon, ze zwaait. Al die glazen ramen, wat zie je niet?”
+              Het deed Minou denken aan haar eigen moeder. “We hadden drie
+              maanden alleen contact via de telefoon. Ik zie in deze drie
+              maanden het isolement ontstaan. Eenzaamheid is een ingewikkeld
+              ding, het is niet sexy, het komt niet op de voorpagina.”
+            </p>
+
+            <p>
+              “En dan bereiken we op dat grasveld die ene vrouw op dat balkon.
+              Het is zo arbeidsintensief…! En hoe maak je dat contact dan
+              overdraagbaar? Je kunt in elk geval niet maken dit alleen maar te
+              betalen uit het potje cultuur. Hoe kunnen andere domeinen hier
+              ook in investeren?”<br>
+              <br>
+              <br>
+              <b>OVER DE DANCE ALONG PARTIES</b>
+            </p>
+
+            <p>
+              Samen dansen en een feestje bouwen, verbindt en is een fijne
+              manier om in beweging te zijn op je eigen manier. ‘Dance along’
+              betekent letterlijk ‘dans mee’. Het gaat (net als bij een
+              sing-along) om een samenkomst van mensen die elkaar nog niet
+              kennen en met elkaar gaan bewegen. De dance along-bijeenkomst is
+              voor iedereen toegankelijk! Er is een kort optreden van een
+              enthousiaste groep deelnemers en daarna kan er samen gedanst
+              worden.
+            </p>
+
+            <p>
+              Tijdens de manifestatie op Zuid kun je kijken naar en meedansen
+              met <a href="https://www.minoux.nl">Minoux</a> op een ruime plek
+              in de wijk. Iedereen kan deelnemen, ook vanaf je balkon of op het
+              grasveld voor de deur!
+            </p>
+
+            <p>
+              Meer info: <a href="https://www.minoux.nl" target=
+              "_blank">www.minoux.nl</a>
+            </p>
+
+            <p>
+              <br>
+              <br>
+              📸 Sas Schilten
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <img width="154" height="150" src="static/avb.svg" alt=
+      "Academie voor Beeldvorming"><br>
+      © <a href="https://www.academievoorbeeldvorming.nl/">Academie voor
+      Beeldvorming</a>. 2024
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+          var hamburger = document.getElementById('hamburger');
+          var menu = document.getElementById('menu');
+          hamburger.addEventListener('click', function(e) {
+              hamburger.classList.toggle('is-active');
+              menu.classList.toggle('visible');
+          });
+
+          var links = document.querySelectorAll('a');
+          for (var link of links) {
+              var a = new RegExp('/' + window.location.host + '/');
+              if (!a.test(link.href)) {
+                  link.addEventListener('click', function(event) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      window.open(this.href, '_blank');
+                  });
+              }
+          }
+      });
+    </script> 
+    <script src="static/flickity.pkgd.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://langlevedenbosch.nl/static/favicon.png">
+    <link rel="stylesheet" href="static/main.scss.css%3F2.css">
+    <link rel="stylesheet" href="static/hamburgers.css">
+    <link rel="stylesheet" href="static/flickity.css">
+    <title>
+      Lang Leve...! Den Bosch - Homepage
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="index.html"><img width="193" height="150" src="static/logo.svg" alt=
+        "Lang Leve...!"></a>
+      </h1>
+
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="zuid/index.html">Terugblik manifestatie Zuid</a>
+          </li>
+
+          <li>
+            <a href="west/index.html">Terugblik manifestatie West</a>
+          </li>
+
+          <li>
+            <a href="fotografie/index.html">Fotografie</a>
+          </li>
+
+          <li>
+            <a href="over/index.html">Over Lang Leve...!</a>
+          </li>
+
+          <li>
+            <a href="contact/index.html">Contact</a>
+          </li>
+        </ul>
+        <button class="hamburger hamburger--collapse" id=
+        'hamburger'><span class="hamburger-box"><span class=
+        "hamburger-inner"></span></span></button>
+      </nav>
+    </header>
+
+    <article>
+      <section class="text">
+        <div class="wrapper">
+          <div class="title">
+            <h1>
+              Welkom bij Lang Leve...! Den Bosch
+            </h1>
+          </div>
+
+          <div class="content">
+            <p>
+              Hoe kun je prettig oud worden in coronatijd? Wat is de waarde van
+              expressie en creativiteit in de anderhalve-meter-samenleving? Hoe
+              helpt kunst om eenzaamheid te voorkomen? Sinds 2018 werken de
+              Academie voor Beeldvorming, Gemeente ‘s-Hertogenbosch en een
+              breed netwerk van culturele instellingen, zorginstellingen,
+              welzijnswerkers en senioreninitiatieven samen aan het
+              actieonderzoek Lang Leve…!
+            </p>
+
+            <p>
+              De vraag die centraal staat: hoe kunnen ouderen zo lang mogelijk
+              onderdeel blijven van het culturele leven in de stad?
+            </p>
+
+            <p>
+              Partners zijn o.a. Dansnest, Minoux, Farent, HUIS73, Stichting
+              Actieve Senioren, Jeroen Bosch Ziekenhuis en culturele podia. Zij
+              oefenen met hoe programma’s vormgegeven kunnen worden in de
+              huidige omstandigheden, die nog wel even kunnen duren. Zo leren
+              we hoe we met nog meer aandacht kunst en cultuurparticipatie in
+              kunnen zetten om prettig oud te kunnen worden in Den Bosch.
+            </p>
+
+            <p>
+              In juni en oktober 2020 vonden twee manifestaties plaats met
+              coronaproof programma’s vol kunst, zin en contact. Digitaal,
+              thuis, binnen en buiten op veilige afstand. De lessen en
+              ervaringen van Lang Leve…! in Zuid zijn te lezen op de pagina
+              Terugblik manifestatie Zuid. Bekijk het programma in West en de
+              geleerde lessen op de pagina Terugblik manifestatie West.<br>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="images">
+        <div class="images" data-flickity=
+        '{ "wrapAround": true, "autoPlay": 5000, "imagesLoaded": true }'>
+          <div class="image-wrapper">
+            <div class="image">
+              <img src=
+              "media/LangLeve-Dansnest-persbeeldSasSchilten.jpg.700x700_q85.jpg">
+            </div>
+          </div>
+
+          <div class="image-wrapper">
+            <div class="image">
+              <img src=
+              "media/SS_20200625_LangLeve_fotowandeling_05_14PmknI.jpg.700x700_q85.jpg">
+            </div>
+          </div>
+
+          <div class="image-wrapper">
+            <div class="image">
+              <img src=
+              "media/SS_20200602_AvB_LangLeveGedichten_12_JKftLdO.jpg.700x700_q85.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="images">
+        <div class="images" data-flickity=
+        '{ "wrapAround": true, "autoPlay": 5000, "imagesLoaded": true }'>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <img width="154" height="150" src="static/avb.svg" alt=
+      "Academie voor Beeldvorming"><br>
+      © <a href="https://www.academievoorbeeldvorming.nl/">Academie voor
+      Beeldvorming</a>. 2024
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+          var hamburger = document.getElementById('hamburger');
+          var menu = document.getElementById('menu');
+          hamburger.addEventListener('click', function(e) {
+              hamburger.classList.toggle('is-active');
+              menu.classList.toggle('visible');
+          });
+
+          var links = document.querySelectorAll('a');
+          for (var link of links) {
+              var a = new RegExp('/' + window.location.host + '/');
+              if (!a.test(link.href)) {
+                  link.addEventListener('click', function(event) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      window.open(this.href, '_blank');
+                  });
+              }
+          }
+      });
+    </script> 
+    <script src="static/flickity.pkgd.min.js"></script>
+  </body>
+</html>

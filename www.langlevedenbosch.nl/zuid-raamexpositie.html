@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://langlevedenbosch.nl/static/favicon.png">
+    <link rel="stylesheet" href="static/main.scss.css%3F2.css">
+    <link rel="stylesheet" href="static/hamburgers.css">
+    <link rel="stylesheet" href="static/flickity.css">
+    <title>
+      Lang Leve...! Den Bosch - raamexpositie
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="index.html"><img width="193" height="150" src="static/logo.svg" alt=
+        "Lang Leve...!"></a>
+      </h1>
+
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="zuid/index.html">Terugblik manifestatie Zuid</a>
+          </li>
+
+          <li>
+            <a href="west/index.html">Terugblik manifestatie West</a>
+          </li>
+
+          <li>
+            <a href="fotografie/index.html">Fotografie</a>
+          </li>
+
+          <li>
+            <a href="over/index.html">Over Lang Leve...!</a>
+          </li>
+
+          <li>
+            <a href="contact/index.html">Contact</a>
+          </li>
+        </ul>
+        <button class="hamburger hamburger--collapse" id=
+        'hamburger'><span class="hamburger-box"><span class=
+        "hamburger-inner"></span></span></button>
+      </nav>
+    </header>
+
+    <article>
+      <section class="images">
+        <div class="images" data-flickity=
+        '{ "wrapAround": true, "autoPlay": 5000, "imagesLoaded": true }'>
+          <div class="image-wrapper">
+            <div class="image">
+              <img src=
+              "media/SS_20200625_LangLeve_fotowandeling_11.jpg.700x700_q85.jpg">
+            </div>
+          </div>
+
+          <div class="image-wrapper">
+            <div class="image">
+              <img src=
+              "media/SS_20200603_AvB_LangLeveRaamExpo_1_o3J5DZ5.jpg.700x700_q85.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text">
+        <div class="wrapper">
+          <div class="title">
+            <h1>
+              Raamexpositie Lang Leve...!
+            </h1>
+          </div>
+
+          <div class="content">
+            <p>
+              Fotografen Imke Panhuijzen, John van Hamond en Nenah Gorissen
+              onderzochten in 2019 wat het betekent om lang te leven. Elk werkt
+              vanuit een andere invalshoek: Imke is modefotograaf en
+              fotografeert voor o.a. Het Parool en de Volkskrant. Nenah werkt
+              autonoom en maakt portretten over liefde en intimiteit. John
+              werkt als documentair fotograaf al langere tijd in bijvoorbeeld
+              de Graafsewijk. De vraag aan hen: hoe kan de beeldvorming rond
+              ouderen in ’s-Hertogenbosch meer divers en representatiever
+              worden?<br>
+              <br>
+              <b>OVER DE RAAMEXPOSITIE</b><br>
+            </p>
+
+            <p>
+              De <a href="http://www.academievoorbeeldvorming.nl/" target=
+              "_blank">Academie voor Beeldvorming</a> bracht de fotoseries uit
+              Lang Leve…! naar twee plekken in ‘s-Hertogenbosch Zuid: Jumbo
+              Pettelaarseweg en ramen van woningen aan Pettelaarseweg. Met
+              wijkwerker Sami Sezin belde ze aan bij bewoners. ‘De beelden
+              hingen er de hele maand juni. Van Jeroen op nummer 206 tot Anneth
+              op nummer 292. En in de Jumbo kregen we 6 ramen in de
+              bloemenhoek.’ In het bladenschap lag het juninummer van de Linda:
+              hierin een vervolg op de serie die Imke Panhuijzen maakte met
+              ‘oma Truus’.<br>
+              <br>
+              <b>OVER DE EXPEDITIE</b><br>
+            </p>
+
+            <p>
+              ‘Op 25 juni werden bewoners en geïnteresseerden uitgenodigd deel
+              te nemen aan een wandeling langs de fotografie. John van Hamond,
+              een van de fotografen, vertelde hier de verhalen achter zijn
+              beelden. We hebben vooral gepraat over oud worden.’ Door de
+              gesprekken rond de foto’s werd nogmaals duidelijk hoezeer de
+              beeldvorming rond ouderdom ouderen in de weg zit. ‘Er is nog
+              zoveel te winnen als we de ervaring van ouderen met oud worden
+              beter leren gebruiken.’
+            </p>
+
+            <p>
+              <a href=
+              "http://www.academievoorbeeldvorming.nl/lang-leve/expeditie-lang-leve//"
+              target="_blank">Lees hier het verslag van de expeditie</a>
+            </p>
+
+            <p>
+              <br>
+              <br>
+              📸 Sas Schilten
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <img width="154" height="150" src="static/avb.svg" alt=
+      "Academie voor Beeldvorming"><br>
+      © <a href="https://www.academievoorbeeldvorming.nl/">Academie voor
+      Beeldvorming</a>. 2024
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+          var hamburger = document.getElementById('hamburger');
+          var menu = document.getElementById('menu');
+          hamburger.addEventListener('click', function(e) {
+              hamburger.classList.toggle('is-active');
+              menu.classList.toggle('visible');
+          });
+
+          var links = document.querySelectorAll('a');
+          for (var link of links) {
+              var a = new RegExp('/' + window.location.host + '/');
+              if (!a.test(link.href)) {
+                  link.addEventListener('click', function(event) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      window.open(this.href, '_blank');
+                  });
+              }
+          }
+      });
+    </script> 
+    <script src="static/flickity.pkgd.min.js"></script>
+  </body>
+</html>

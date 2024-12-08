@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://langlevedenbosch.nl/static/favicon.png">
+    <link rel="stylesheet" href="static/main.scss.css%3F2.css">
+    <link rel="stylesheet" href="static/hamburgers.css">
+    <link rel="stylesheet" href="static/flickity.css">
+    <title>
+      Lang Leve...! Den Bosch - Verhalen van Frans
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="index.html"><img width="193" height="150" src="static/logo.svg" alt=
+        "Lang Leve...!"></a>
+      </h1>
+
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="zuid/index.html">Terugblik manifestatie Zuid</a>
+          </li>
+
+          <li>
+            <a href="west/index.html">Terugblik manifestatie West</a>
+          </li>
+
+          <li>
+            <a href="fotografie/index.html">Fotografie</a>
+          </li>
+
+          <li>
+            <a href="over/index.html">Over Lang Leve...!</a>
+          </li>
+
+          <li>
+            <a href="contact/index.html">Contact</a>
+          </li>
+        </ul>
+        <button class="hamburger hamburger--collapse" id=
+        'hamburger'><span class="hamburger-box"><span class=
+        "hamburger-inner"></span></span></button>
+      </nav>
+    </header>
+
+    <article>
+      <section class="header_small">
+        <div class="wrapper">
+          <img src="static/heart.svg"> <a href="index.html">
+          <h1>
+            Lang Leve...!
+          </h1>
+
+          <h2>
+            Den Bosch
+          </h2></a>
+        </div>
+      </section>
+
+      <section class="video">
+        <div class="video">
+          <div class="iframe">
+            <iframe width="800" height="600" src=
+            "https://www.youtube.com/embed/1Q2O2WozoLU?wmode=opaque" loading=
+            "lazy" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="text">
+        <div class="wrapper">
+          <div class="title">
+            <h1>
+              Verhalen van Frans
+            </h1>
+          </div>
+
+          <div class="content">
+            <p>
+              Aan het einde van de maand werden de verhalen van Frans
+              toegevoegd als digitaal programma op de website. Sami Sezin,
+              wijkwerker van Farent, had contact met de familie. Uiteindelijk
+              heeft de dochter van Frans zelf de filmpjes opgenomen en een
+              youtubekanaal aangemaakt. Via het Lang Leve…! netwerk en Farent
+              zijn de filmpjes gedeeld.
+            </p>
+
+            <p>
+              “Bijzonder dat zijn verhalen op deze manier aandacht kunnen
+              krijgen.” Luisteraars zijn nog steeds welkom om een reactie
+              achter te laten.<br>
+              <br>
+              <br>
+              <b>OVER DE VERHALEN VAN FRANS</b>
+            </p>
+
+            <p>
+              Frans is een bewoner van ‘s-Hertogenbosch Zuid en is in de wijk
+              goed bekend. Hij was een bevlogen leraar die vele wijkbewoners in
+              de klas heeft gehad. Frans hield altijd al van vertellen, maar nu
+              hij niet meer voor de klas staat vertelt hij graag zijn zelf
+              geschreven verhalen over vroeger en zijn jeugd.
+            </p>
+
+            <p>
+              Nu voor ons om hiervan te genieten!
+            </p>
+
+            <p>
+              <a href=
+              "https://www.youtube.com/channel/UC-IYZd5OcnXbLiE5A3ixiWA">Klik
+              hier om de verhalen te beluisteren en laat gerust een reactie
+              achter.</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <img width="154" height="150" src="static/avb.svg" alt=
+      "Academie voor Beeldvorming"><br>
+      © <a href="https://www.academievoorbeeldvorming.nl/">Academie voor
+      Beeldvorming</a>. 2024
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+          var hamburger = document.getElementById('hamburger');
+          var menu = document.getElementById('menu');
+          hamburger.addEventListener('click', function(e) {
+              hamburger.classList.toggle('is-active');
+              menu.classList.toggle('visible');
+          });
+
+          var links = document.querySelectorAll('a');
+          for (var link of links) {
+              var a = new RegExp('/' + window.location.host + '/');
+              if (!a.test(link.href)) {
+                  link.addEventListener('click', function(event) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      window.open(this.href, '_blank');
+                  });
+              }
+          }
+      });
+    </script> 
+    <script src="static/flickity.pkgd.min.js"></script>
+  </body>
+</html>

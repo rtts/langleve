@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://langlevedenbosch.nl/static/favicon.png">
+    <link rel="stylesheet" href="static/main.scss.css%3F2.css">
+    <link rel="stylesheet" href="static/hamburgers.css">
+    <link rel="stylesheet" href="static/flickity.css">
+    <title>
+      Lang Leve...! Den Bosch - Aftrap
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="index.html"><img width="193" height="150" src="static/logo.svg" alt=
+        "Lang Leve...!"></a>
+      </h1>
+
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="zuid/index.html">Terugblik manifestatie Zuid</a>
+          </li>
+
+          <li>
+            <a href="west/index.html">Terugblik manifestatie West</a>
+          </li>
+
+          <li>
+            <a href="fotografie/index.html">Fotografie</a>
+          </li>
+
+          <li>
+            <a href="over/index.html">Over Lang Leve...!</a>
+          </li>
+
+          <li>
+            <a href="contact/index.html">Contact</a>
+          </li>
+        </ul>
+        <button class="hamburger hamburger--collapse" id=
+        'hamburger'><span class="hamburger-box"><span class=
+        "hamburger-inner"></span></span></button>
+      </nav>
+    </header>
+
+    <article>
+      <section class="header_small">
+        <div class="wrapper">
+          <img src="static/heart.svg"> <a href="index.html">
+          <h1>
+            Lang Leve...!
+          </h1>
+
+          <h2>
+            Den Bosch
+          </h2></a>
+        </div>
+      </section>
+
+      <section class="images">
+        <div class="images" data-flickity=
+        '{ "wrapAround": true, "autoPlay": 5000, "imagesLoaded": true }'>
+          <div class="image-wrapper">
+            <div class="image">
+              <img src="media/01.jpg.700x700_q85.jpg">
+            </div>
+          </div>
+
+          <div class="image-wrapper">
+            <div class="image">
+              <img src="media/02_8yN1u2T.jpg.700x700_q85.jpg">
+            </div>
+          </div>
+
+          <div class="image-wrapper">
+            <div class="image">
+              <img src="media/03.jpg.700x700_q85.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text">
+        <div class="wrapper">
+          <div class="title">
+            <h1>
+              Aftrap Lang Leve...! West
+            </h1>
+          </div>
+
+          <div class="content">
+            <p>
+              Fysiek was het niet mogelijk om samen te komen, daarom
+              organiseerde de Academie voor Beeldvorming een online aftrap voor
+              betrokkenen bij het Lang Leve…! netwerk. Wethouder Ufuk Kahya,
+              zelf opgegroeid in West, sloot aan.
+            </p>
+
+            <p>
+              Iedere aanwezige belde met een bewoner; er is met 17 bewoners
+              gesproken over diens beleving van oud worden en het programma van
+              Lang Leve…! Contacten kwamen van SAS, Farent en Huis73 en waren
+              deels cursisten.
+            </p>
+
+            <p>
+              <b>OVER DE AFTRAP</b>
+            </p>
+
+            <p>
+              De gezamenlijk aftrap met het Lang Leve…! netwerk. We kunnen niet
+              fysiek samenkomen, daarom organiseert de Academie voor
+              Beeldvorming een online aftrap.
+            </p>
+
+            <p>
+              Wethouder Ufuk Kahya, zelf opgegroeid in West, sluit aan. De
+              deelnemers krijgen ieder een telefoonnummer van een bewoner of
+              ondernemer in de Schutskamp. Via een belinstructie voeren we het
+              gesprek over wat het leven de moeite waard maakt, wat je wilt
+              leren en wat iemand verwacht of hoopt dat Lang Leve…! kan
+              betekenen.
+            </p>
+
+            <p>
+              Aan het einde van de 10 daagse manifestatie worden de bewoners
+              weer teruggebeld waarin samen wordt terug gekeken op Lang Leve…!
+              West.
+            </p>
+
+            <p>
+              <b>Wanneer:</b> 23 oktober 2020, 15.30 uur<br>
+              <b>Waar:</b> online<br>
+              <b>Organisatie:</b> Academie voor Beeldvorming<br>
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <img width="154" height="150" src="static/avb.svg" alt=
+      "Academie voor Beeldvorming"><br>
+      © <a href="https://www.academievoorbeeldvorming.nl/">Academie voor
+      Beeldvorming</a>. 2024
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+          var hamburger = document.getElementById('hamburger');
+          var menu = document.getElementById('menu');
+          hamburger.addEventListener('click', function(e) {
+              hamburger.classList.toggle('is-active');
+              menu.classList.toggle('visible');
+          });
+
+          var links = document.querySelectorAll('a');
+          for (var link of links) {
+              var a = new RegExp('/' + window.location.host + '/');
+              if (!a.test(link.href)) {
+                  link.addEventListener('click', function(event) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      window.open(this.href, '_blank');
+                  });
+              }
+          }
+      });
+    </script> 
+    <script src="static/flickity.pkgd.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://langlevedenbosch.nl/static/favicon.png">
+    <link rel="stylesheet" href="static/main.scss.css%3F2.css">
+    <link rel="stylesheet" href="static/hamburgers.css">
+    <link rel="stylesheet" href="static/flickity.css">
+    <title>
+      Lang Leve...! Den Bosch - Raamspelletjes
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="index.html"><img width="193" height="150" src="static/logo.svg" alt=
+        "Lang Leve...!"></a>
+      </h1>
+
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="zuid/index.html">Terugblik manifestatie Zuid</a>
+          </li>
+
+          <li>
+            <a href="west/index.html">Terugblik manifestatie West</a>
+          </li>
+
+          <li>
+            <a href="fotografie/index.html">Fotografie</a>
+          </li>
+
+          <li>
+            <a href="over/index.html">Over Lang Leve...!</a>
+          </li>
+
+          <li>
+            <a href="contact/index.html">Contact</a>
+          </li>
+        </ul>
+        <button class="hamburger hamburger--collapse" id=
+        'hamburger'><span class="hamburger-box"><span class=
+        "hamburger-inner"></span></span></button>
+      </nav>
+    </header>
+
+    <article>
+      <section class="images">
+        <div class="images" data-flickity=
+        '{ "wrapAround": true, "autoPlay": 5000, "imagesLoaded": true }'>
+          <div class="image-wrapper">
+            <div class="image">
+              <img src=
+              "media/WhatsApp_Image_2020-10-30_at_15.42.32_3_ikpyaki.jpeg.700x700_q85.jpg">
+            </div>
+          </div>
+
+          <div class="image-wrapper">
+            <div class="image">
+              <img src=
+              "media/WhatsApp_Image_2020-10-29_at_11.49.49.jpeg.700x700_q85.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text">
+        <div class="wrapper">
+          <div class="title">
+            <h1>
+              Raamspelletjes
+            </h1>
+          </div>
+
+          <div class="content">
+            <p>
+              Muziek in de Wijk i.s.m. Schurkenbiefstuk (door Farent) en de
+              Balkonbeweeglessen (door ‘S-PORT) mochten ondanks een eerste
+              goedkeuring van Veiligheid (Gemeente Den Bosch) toch niet door
+              gaan. Wijkwerker Benthe: “Daardoor hadden we tijd om aan te
+              sluiten bij andere programmaonderdelen. Fijn om Dewi beter te
+              leren kennen! De raamspelletjes die we samen deden met
+              wijkbewoners, werkten telkens anders: in flats, bij koophuizen,
+              bij D-Reizen. We moeten echt blijven onderzoeken wat werkt en wat
+              niet.”
+            </p>
+
+            <p>
+              Dewi van ‘S-PORT: “Ik zie echt de meerwaarde van dit samen doen.
+              Mijn focus ligt op bewegen en goed in je vel zitten. Simon kon
+              als wijkwerker direct de juiste vragen stellen om contact te
+              krijgen met een bewoner. We hebben elkaar nodig in de
+              samenwerking!”
+            </p>
+
+            <p>
+              <b>OVER RAAMSPELLETJES</b>
+            </p>
+
+            <p>
+              Gezellig ouderwets een spelletje spelen. Niet aan de keukentafel,
+              maar coronaproof met het raam ertussen.
+            </p>
+
+            <p>
+              Op woensdag 28 oktober werd voor het raam een plastic vel
+              geplakt, waar de spelletjes op gespeeld werden. Denk aan Boter
+              Kaas & Eieren, Vier op een Rij en meer. Het raam bleef uiteraard
+              schoon! Na het spelen van de spelletjes kregen deelnemers een
+              bingokaart, waarmee ze thuis op een leuke manier in beweging
+              kunnen blijven. De raamspelletjes zijn ook gespeeld in
+              winkelcentrum Helftheuvel bij D-Reizen.
+            </p>
+
+            <p>
+              <br>
+              <br>
+            </p>
+
+            <p>
+              <b>Waar:</b> bij jou thuis, voor je raam<br>
+              <b>Organisatie:</b> ‘S-PORT<br>
+              <b>Aanmelden:</b> mail naar d.vanmaaren@s-hertogenbosch.nl of bel
+              naar 06-22511929<br>
+              <b>Meer info:</b> <a href="https://langlevedenbosch.nl/west-raamspelletjes/www.s-port.nl" target=
+              "_blank">www.s-port.nl</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <img width="154" height="150" src="static/avb.svg" alt=
+      "Academie voor Beeldvorming"><br>
+      © <a href="https://www.academievoorbeeldvorming.nl/">Academie voor
+      Beeldvorming</a>. 2024
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+          var hamburger = document.getElementById('hamburger');
+          var menu = document.getElementById('menu');
+          hamburger.addEventListener('click', function(e) {
+              hamburger.classList.toggle('is-active');
+              menu.classList.toggle('visible');
+          });
+
+          var links = document.querySelectorAll('a');
+          for (var link of links) {
+              var a = new RegExp('/' + window.location.host + '/');
+              if (!a.test(link.href)) {
+                  link.addEventListener('click', function(event) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      window.open(this.href, '_blank');
+                  });
+              }
+          }
+      });
+    </script> 
+    <script src="static/flickity.pkgd.min.js"></script>
+  </body>
+</html>

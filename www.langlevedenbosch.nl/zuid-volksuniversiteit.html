@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://langlevedenbosch.nl/static/favicon.png">
+    <link rel="stylesheet" href="static/main.scss.css%3F2.css">
+    <link rel="stylesheet" href="static/hamburgers.css">
+    <link rel="stylesheet" href="static/flickity.css">
+    <title>
+      Lang Leve...! Den Bosch - Workshop Levensverhaal
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="index.html"><img width="193" height="150" src="static/logo.svg" alt=
+        "Lang Leve...!"></a>
+      </h1>
+
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="zuid/index.html">Terugblik manifestatie Zuid</a>
+          </li>
+
+          <li>
+            <a href="west/index.html">Terugblik manifestatie West</a>
+          </li>
+
+          <li>
+            <a href="fotografie/index.html">Fotografie</a>
+          </li>
+
+          <li>
+            <a href="over/index.html">Over Lang Leve...!</a>
+          </li>
+
+          <li>
+            <a href="contact/index.html">Contact</a>
+          </li>
+        </ul>
+        <button class="hamburger hamburger--collapse" id=
+        'hamburger'><span class="hamburger-box"><span class=
+        "hamburger-inner"></span></span></button>
+      </nav>
+    </header>
+
+    <article>
+      <section class="header_small">
+        <div class="wrapper">
+          <img src="static/heart.svg"> <a href="index.html">
+          <h1>
+            Lang Leve...!
+          </h1>
+
+          <h2>
+            Den Bosch
+          </h2></a>
+        </div>
+      </section>
+
+      <section class="images">
+        <div class="images" data-flickity=
+        '{ "wrapAround": true, "autoPlay": 5000, "imagesLoaded": true }'>
+          <div class="image-wrapper">
+            <div class="image">
+              <img src=
+              "media/Autobiografisch_schrijven_vu_miekeweb4.IMG_36582_TKr61cn.jpg.700x700_q85.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text">
+        <div class="wrapper">
+          <div class="title">
+            <h1>
+              Schrijven van je autobiografie
+            </h1>
+          </div>
+
+          <div class="content">
+            <p>
+              De Volksuniversiteit en docent Mieke Elfers hebben hun workshop
+              autobiografisch schrijven aangepast op de corona-omstandigheden.
+              Ze boden telefonisch begeleiding. Toch bleek het met deze
+              aanpassing niet vanzelfsprekend dat hier ook animo voor was.
+            </p>
+
+            <p>
+              De volgende Lang Leve…! manifestatie word er meer aandacht
+              besteedt aan het betrekken van ouderen om deel te nemen.<br>
+            </p>
+
+            <p>
+              <b>OVER DE WORKSHOP</b>
+            </p>
+
+            <p>
+              In deze workshop gaan we schrijven over aspecten van het eigen
+              leven. Over gebeurtenissen, invloeden en personen. We gaan deze
+              gebeurtenissen wortelen in de huidige setting waar je woont in
+              Den Bosch Zuid èn in het landschap van je jeugd.
+            </p>
+
+            <p>
+              Vervolgens gaan we de schrijfopdracht uitbreiden.
+            </p>
+
+            <p>
+              Per mail of post stuur je de tekst op naar docent Mieke
+              Elfers.<br>
+              Via de telefoon wordt deze vervolgens besproken.
+            </p>
+
+            <p>
+              De workshop reikt bruikbare manieren aan om het vele
+              autobiografische materiaal te ordenen. Schrijfopdrachten staan in
+              dienst van de ontdekkingstocht naar de eigen levensgeschiedenis.
+              Er is geen vooropleiding vereist. Wel moet men kunnen reflecteren
+              op zichzelf en het eigen leven.
+            </p>
+
+            <p>
+              Meer info: <a href="https://www.vudenbosch.nl" target=
+              "_blank">www.vudenbosch.nl</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <img width="154" height="150" src="static/avb.svg" alt=
+      "Academie voor Beeldvorming"><br>
+      © <a href="https://www.academievoorbeeldvorming.nl/">Academie voor
+      Beeldvorming</a>. 2024
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+          var hamburger = document.getElementById('hamburger');
+          var menu = document.getElementById('menu');
+          hamburger.addEventListener('click', function(e) {
+              hamburger.classList.toggle('is-active');
+              menu.classList.toggle('visible');
+          });
+
+          var links = document.querySelectorAll('a');
+          for (var link of links) {
+              var a = new RegExp('/' + window.location.host + '/');
+              if (!a.test(link.href)) {
+                  link.addEventListener('click', function(event) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      window.open(this.href, '_blank');
+                  });
+              }
+          }
+      });
+    </script> 
+    <script src="static/flickity.pkgd.min.js"></script>
+  </body>
+</html>

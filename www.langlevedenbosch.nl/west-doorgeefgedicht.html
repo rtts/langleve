@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://langlevedenbosch.nl/static/favicon.png">
+    <link rel="stylesheet" href="static/main.scss.css%3F2.css">
+    <link rel="stylesheet" href="static/hamburgers.css">
+    <link rel="stylesheet" href="static/flickity.css">
+    <title>
+      Lang Leve...! Den Bosch - west-doorgeefgedicht
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="index.html"><img width="193" height="150" src="static/logo.svg" alt=
+        "Lang Leve...!"></a>
+      </h1>
+
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="zuid/index.html">Terugblik manifestatie Zuid</a>
+          </li>
+
+          <li>
+            <a href="west/index.html">Terugblik manifestatie West</a>
+          </li>
+
+          <li>
+            <a href="fotografie/index.html">Fotografie</a>
+          </li>
+
+          <li>
+            <a href="over/index.html">Over Lang Leve...!</a>
+          </li>
+
+          <li>
+            <a href="contact/index.html">Contact</a>
+          </li>
+        </ul>
+        <button class="hamburger hamburger--collapse" id=
+        'hamburger'><span class="hamburger-box"><span class=
+        "hamburger-inner"></span></span></button>
+      </nav>
+    </header>
+
+    <article>
+      <section class="header_small">
+        <div class="wrapper">
+          <img src="static/heart.svg"> <a href="index.html">
+          <h1>
+            Lang Leve...!
+          </h1>
+
+          <h2>
+            Den Bosch
+          </h2></a>
+        </div>
+      </section>
+
+      <section class="video">
+        <div class="video">
+          <div class="iframe">
+            <iframe width="800" height="600" src=
+            "https://www.youtube.com/embed/ZCZOpJByY64?wmode=opaque" loading=
+            "lazy" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="text">
+        <div class="wrapper">
+          <div class="title">
+            <h1>
+              Mag ik uw leeftijd even lenen?
+            </h1>
+          </div>
+
+          <div class="content">
+            <p>
+              In de eerste instantie zou Dichter op de Koffie door tijdgebrek
+              geen bijdrage leveren aan het programma in West. Uiteindelijk is
+              een samenwerkingsverband vanuit het reguliere programma in de
+              stad wel onderdeel geworden van Lang Leve…! via een online
+              aanbod. De opname van Radio Social Label is hieronder geplaatst,
+              om op die manier aandacht te geven aan het project.
+            </p>
+
+            <p>
+              <b>OVER HET DOORGEEFGEDICHT</b>
+            </p>
+
+            <p>
+              Stadsdichter Doeko L. schreef het eerste couplet van het Bossche
+              doorgeefgedicht. De titel is: ‘Mag ik je leeftijd even lenen?’
+              Begin augustus presenteerde hij dit couplet bij Kameraden op het
+              terras van het brugwachtershuis bij Sluis 0. Dichter op de Koffie
+              serveerde inspiratie en de schrijfopdracht.
+            </p>
+
+            <p>
+              De 15 dichters van verschillende generaties komen uit alle delen
+              van de stad. Ieder schreef een couplet over wat deze belangrijk
+              vindt als het over leeftijd en leven. Elke dichter eindigde met
+              een vraag voor de volgende dichter.
+            </p>
+
+            <p>
+              Doeko L. las het gedicht voor op Radio Social Label in de
+              uitzending van 25 oktober om 11.00 uur. Hierboven kan je het
+              gedicht terugluisteren vanaf 21.25 minuten.<br>
+              <br>
+            </p>
+
+            <p>
+              <b>Waar:</b> Online via <a href="https://radiosociallabel.nl/"
+              target="_blank">www.radiosociallabel.nl</a><br>
+              <b>Aangeboden door:</b> stadsdichter Doeko L., Kameraden.nl en
+              Dichter op de koffie<br>
+              <b>Meer info:</b><a href="http://www.schrijftotaal.nl/" target=
+              "_blank">www.schrijftotaal.nl</a><br>
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <img width="154" height="150" src="static/avb.svg" alt=
+      "Academie voor Beeldvorming"><br>
+      © <a href="https://www.academievoorbeeldvorming.nl/">Academie voor
+      Beeldvorming</a>. 2024
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+          var hamburger = document.getElementById('hamburger');
+          var menu = document.getElementById('menu');
+          hamburger.addEventListener('click', function(e) {
+              hamburger.classList.toggle('is-active');
+              menu.classList.toggle('visible');
+          });
+
+          var links = document.querySelectorAll('a');
+          for (var link of links) {
+              var a = new RegExp('/' + window.location.host + '/');
+              if (!a.test(link.href)) {
+                  link.addEventListener('click', function(event) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      window.open(this.href, '_blank');
+                  });
+              }
+          }
+      });
+    </script> 
+    <script src="static/flickity.pkgd.min.js"></script>
+  </body>
+</html>

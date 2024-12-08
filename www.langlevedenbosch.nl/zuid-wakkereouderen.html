@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://langlevedenbosch.nl/static/favicon.png">
+    <link rel="stylesheet" href="static/main.scss.css%3F2.css">
+    <link rel="stylesheet" href="static/hamburgers.css">
+    <link rel="stylesheet" href="static/flickity.css">
+    <title>
+      Lang Leve...! Den Bosch - wakkereouderen
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="index.html"><img width="193" height="150" src="static/logo.svg" alt=
+        "Lang Leve...!"></a>
+      </h1>
+
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="zuid/index.html">Terugblik manifestatie Zuid</a>
+          </li>
+
+          <li>
+            <a href="west/index.html">Terugblik manifestatie West</a>
+          </li>
+
+          <li>
+            <a href="fotografie/index.html">Fotografie</a>
+          </li>
+
+          <li>
+            <a href="over/index.html">Over Lang Leve...!</a>
+          </li>
+
+          <li>
+            <a href="contact/index.html">Contact</a>
+          </li>
+        </ul>
+        <button class="hamburger hamburger--collapse" id=
+        'hamburger'><span class="hamburger-box"><span class=
+        "hamburger-inner"></span></span></button>
+      </nav>
+    </header>
+
+    <article>
+      <section class="header_small">
+        <div class="wrapper">
+          <img src="static/heart.svg"> <a href="index.html">
+          <h1>
+            Lang Leve...!
+          </h1>
+
+          <h2>
+            Den Bosch
+          </h2></a>
+        </div>
+      </section>
+
+      <section class="images">
+        <div class="images" data-flickity=
+        '{ "wrapAround": true, "autoPlay": 5000, "imagesLoaded": true }'>
+          <div class="image-wrapper">
+            <div class="image">
+              <img src=
+              "media/IMG_2143-e1539853950504-300x225.jpg.700x700_q85.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text">
+        <div class="wrapper">
+          <div class="title">
+            <h1>
+              Wakkere Ouderen
+            </h1>
+          </div>
+
+          <div class="content">
+            <p>
+              <a href="https://www.wakkeregrootmoeders.nl/" target=
+              "_blank">Wakkere Ouderen</a> organiseerden twee workshops over
+              empowerment. ‘Een andere kijk op eenzaamheid’ door Maria Boone is
+              afgezegd wegens ziekte. Bij de workshop ‘Samen weven we de
+              Toekomst’ van Nel Willekens waren slechts twee deelnemers.
+              “Terugkijkend zijn wij er blijkbaar teveel van uitgegaan, dat
+              Lang Leve…! ons ziet als onderdeel van de doelgroep, waarvoor de
+              manifestatie wordt georganiseerd.”
+            </p>
+
+            <p>
+              In een mail krijgt het netwerk Lang Leve…! een emotionele brief.
+              “Wij hebben minder organisatiekracht, vaak handicaps en de handen
+              vol aan ons eigen ouder worden. We vechten als Wakkere Ouderen
+              tegen eenzaamheid en isolement. We gaan de verbinding aan met
+              elkaar en de samenleving, maar niemand komt op het idee bij ons
+              te komen kijken. We voelen ons als ouderen, als
+              ervaringsdeskundigen, in de kou staan.”
+            </p>
+
+            <p>
+              Belangrijke les die vorig jaar al aan het licht kwam was dat Lang
+              Leve…! niet gaat over oud worden, maar over ‘niet meer werken’.
+              Professionals – de mensen die werken – zijn degenen die
+              beslissingen nemen die gaan over ouderen – de mensen die niet
+              meer werken. Hoe kunnen betrokken ouderen toch invloed krijgen in
+              beleid, netwerk, cultuur en de verdeling van geld?<br>
+              <br>
+            </p>
+
+            <p>
+              <b>OVER DE WORKSHOPS EMPOWERMENT</b><br>
+            </p>
+
+            <p>
+              Wakkere Ouderen dragen middels groepsdialogen, workshops en
+              themabijeenkomsten bij aan thema’s die ‘wakker worden’ en ‘wakker
+              zijn’ stimuleren.
+            </p>
+
+            <p>
+              Met hun activiteiten maken ze het bewustzijn bij mensen wakker:
+              de energie van mogelijk maken, van ontvankelijk zijn voor het
+              moment en wat zich daarin aandient. Wakkere Ouderen geeft de
+              vitale kracht van de ouderen weer een plek in de samenleving. Om
+              de levenswijsheid en ervaring die zij meebrengen actief te
+              gebruiken. Om meer heelheid in het samen leven te brengen.
+            </p>
+
+            <p>
+              Tijdens Lang Leve…! organiseerden Nel Willekens en Maria Boone
+              twee workshops:
+            </p>
+
+            <ul>
+              <li>15 juni, 14:00 - 16:00 uur: Nel Willekens: ‘Samen weven we de
+              Toekomst’
+              </li>
+
+              <li>18 juni, 14:00 - 16:00 uur: Maria Boone: ‘Een andere kijk op
+              eenzaamheid’ (wegens ziekte geannuleerd)
+              </li>
+            </ul>
+
+            <p>
+              Meer info: <a href="https://www.wakkeregrootmoeders.nl/" target=
+              "_blank">www.wakkeregrootmoeders.nl</a><br>
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <img width="154" height="150" src="static/avb.svg" alt=
+      "Academie voor Beeldvorming"><br>
+      © <a href="https://www.academievoorbeeldvorming.nl/">Academie voor
+      Beeldvorming</a>. 2024
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+          var hamburger = document.getElementById('hamburger');
+          var menu = document.getElementById('menu');
+          hamburger.addEventListener('click', function(e) {
+              hamburger.classList.toggle('is-active');
+              menu.classList.toggle('visible');
+          });
+
+          var links = document.querySelectorAll('a');
+          for (var link of links) {
+              var a = new RegExp('/' + window.location.host + '/');
+              if (!a.test(link.href)) {
+                  link.addEventListener('click', function(event) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      window.open(this.href, '_blank');
+                  });
+              }
+          }
+      });
+    </script> 
+    <script src="static/flickity.pkgd.min.js"></script>
+  </body>
+</html>

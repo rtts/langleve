@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="heart.svg"
+   stroke-width="0"
+   stroke="#000"
+   fill="#000"
+   height="102px"
+   width="102px"
+   xml:space="preserve"
+   style="enable-background:new 0 0 504.114 504.114;"
+   viewBox="0 0 504.11 504.11"
+   y="0px"
+   x="0px"
+   id="IconsRepoEditor"
+   version="1.1"><metadata
+   id="metadata12"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs10" /><sodipodi:namedview
+   inkscape:current-layer="IconsRepoEditor"
+   inkscape:window-maximized="0"
+   inkscape:window-y="0"
+   inkscape:window-x="0"
+   inkscape:cy="52.6186"
+   inkscape:cx="32.746372"
+   inkscape:zoom="6.4557081"
+   showgrid="false"
+   id="namedview8"
+   inkscape:window-height="1075"
+   inkscape:window-width="1920"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0"
+   guidetolerance="10"
+   gridtolerance="10"
+   objecttolerance="10"
+   borderopacity="1"
+   bordercolor="#666666"
+   pagecolor="#ffffff" />
+
+<g
+   id="IconsRepo_bgCarrier" /> <path
+   style="fill:#ffffff;fill-opacity:1"
+   sodipodi:nodetypes="cscscccsccc"
+   id="path3"
+   d="M 491.022,93.555 C 469.367,44.932 425.1,17.04 369.569,17.04 316.01,17.04 274.933,39.66 252.061,81.199 229.18,39.661 188.103,17.04 134.553,17.04 79.014,17.04 34.747,44.931 13.091,93.555 -13.525,153.325 1.1720002,227.38 50.543,282.231 c 32.986,36.654 193.939,200.721 195.534,202.341 1.57,1.595 3.727,2.501 5.985,2.501 2.249,0 4.407,-0.906 5.976,-2.501 1.595,-1.62 162.547,-165.687 195.534,-202.341 49.369,-54.851 64.066,-128.906 37.45,-188.676 z" />  </svg>

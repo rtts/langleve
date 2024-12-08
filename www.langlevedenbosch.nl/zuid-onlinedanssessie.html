@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://langlevedenbosch.nl/static/favicon.png">
+    <link rel="stylesheet" href="static/main.scss.css%3F2.css">
+    <link rel="stylesheet" href="static/hamburgers.css">
+    <link rel="stylesheet" href="static/flickity.css">
+    <title>
+      Lang Leve...! Den Bosch - onlinedanssessie
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="index.html"><img width="193" height="150" src="static/logo.svg" alt=
+        "Lang Leve...!"></a>
+      </h1>
+
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="zuid/index.html">Terugblik manifestatie Zuid</a>
+          </li>
+
+          <li>
+            <a href="west/index.html">Terugblik manifestatie West</a>
+          </li>
+
+          <li>
+            <a href="fotografie/index.html">Fotografie</a>
+          </li>
+
+          <li>
+            <a href="over/index.html">Over Lang Leve...!</a>
+          </li>
+
+          <li>
+            <a href="contact/index.html">Contact</a>
+          </li>
+        </ul>
+        <button class="hamburger hamburger--collapse" id=
+        'hamburger'><span class="hamburger-box"><span class=
+        "hamburger-inner"></span></span></button>
+      </nav>
+    </header>
+
+    <article>
+      <section class="header_small">
+        <div class="wrapper">
+          <img src="static/heart.svg"> <a href="index.html">
+          <h1>
+            Lang Leve...!
+          </h1>
+
+          <h2>
+            Den Bosch
+          </h2></a>
+        </div>
+      </section>
+
+      <section class="video">
+        <div class="video">
+          <div class="iframe">
+            <iframe width="800" height="600" src=
+            "https://www.youtube.com/embed/ZZ4gF2VcPdk?wmode=opaque" loading=
+            "lazy" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="text">
+        <div class="wrapper">
+          <div class="title">
+            <h1>
+              Online Danssessie
+            </h1>
+          </div>
+
+          <div class="content">
+            <p>
+              Hoe organiseer je online danssessies voor ouderen? Andrew
+              Greenwood en Meta de Zeeuw werken samen onder de naam <a href=
+              "http://www.switch2move.com" target="_blank">SW!TCH2MOVE</a> en
+              organiseerden eerder al online danssessies met bestaande
+              cursistengroepen. Maar het digitaal aanbod blijkt voor nieuw te
+              bereiken ouderen onvoldoende toegankelijk.
+            </p>
+
+            <p>
+              Speciaal voor Lang Leve…! werd er digitale ondersteuning
+              aangeboden voor ouderen die daar moeite mee hadden. Toch bleken
+              ouderen niet meteen enthousiast als ze een extra programma op hun
+              tablet of computer moesten installeren.
+            </p>
+
+            <p>
+              “Aan de online danssessies van Switch2Move is alleen deelgenomen
+              door de persoon die als vrijwilliger digitale ondersteuning
+              aanbod. Hier moet in samenwerking met Babel en gemeente snel iets
+              worden gedaan. Alle ouderen moeten leren Zoomen, Skypen en
+              WhatsAppen.”<br>
+              <br>
+              <br>
+              <b>OVER SW!TCH2MOVE</b>
+            </p>
+
+            <p>
+              SW!TCH2MOVE heeft een programma ontwikkeld waarbij je middels
+              verschillende bewegingen op muziek, samen met elkaar werkt aan
+              het verbeteren van je algehele conditie.
+            </p>
+
+            <p>
+              Bij het volgen van de S2M activiteiten zul je merken dat je meer
+              energie en zelfvertrouwen krijgt. Daardoor ga je je beter in
+              balans voelen.
+            </p>
+
+            <p>
+              Het programma is geschikt voor iedereen maar met name bedoeld
+              voor mensen met dementie.
+            </p>
+
+            <p>
+              Meer info: <a href="http://www.switch2move.com/" target=
+              "_blank">www.switch2move.com</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <img width="154" height="150" src="static/avb.svg" alt=
+      "Academie voor Beeldvorming"><br>
+      © <a href="https://www.academievoorbeeldvorming.nl/">Academie voor
+      Beeldvorming</a>. 2024
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+          var hamburger = document.getElementById('hamburger');
+          var menu = document.getElementById('menu');
+          hamburger.addEventListener('click', function(e) {
+              hamburger.classList.toggle('is-active');
+              menu.classList.toggle('visible');
+          });
+
+          var links = document.querySelectorAll('a');
+          for (var link of links) {
+              var a = new RegExp('/' + window.location.host + '/');
+              if (!a.test(link.href)) {
+                  link.addEventListener('click', function(event) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      window.open(this.href, '_blank');
+                  });
+              }
+          }
+      });
+    </script> 
+    <script src="static/flickity.pkgd.min.js"></script>
+  </body>
+</html>

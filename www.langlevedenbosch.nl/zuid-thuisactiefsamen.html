@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://langlevedenbosch.nl/static/favicon.png">
+    <link rel="stylesheet" href="static/main.scss.css%3F2.css">
+    <link rel="stylesheet" href="static/hamburgers.css">
+    <link rel="stylesheet" href="static/flickity.css">
+    <title>
+      Lang Leve...! Den Bosch - thuisactiefsamen
+    </title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="index.html"><img width="193" height="150" src="static/logo.svg" alt=
+        "Lang Leve...!"></a>
+      </h1>
+
+      <nav>
+        <ul id="menu">
+          <li>
+            <a href="zuid/index.html">Terugblik manifestatie Zuid</a>
+          </li>
+
+          <li>
+            <a href="west/index.html">Terugblik manifestatie West</a>
+          </li>
+
+          <li>
+            <a href="fotografie/index.html">Fotografie</a>
+          </li>
+
+          <li>
+            <a href="over/index.html">Over Lang Leve...!</a>
+          </li>
+
+          <li>
+            <a href="contact/index.html">Contact</a>
+          </li>
+        </ul>
+        <button class="hamburger hamburger--collapse" id=
+        'hamburger'><span class="hamburger-box"><span class=
+        "hamburger-inner"></span></span></button>
+      </nav>
+    </header>
+
+    <article>
+      <section class="images">
+        <div class="images" data-flickity=
+        '{ "wrapAround": true, "autoPlay": 5000, "imagesLoaded": true }'>
+          <div class="image-wrapper">
+            <div class="image">
+              <img src="media/farent_02_fKKgJc8.jpg.700x700_q85.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text">
+        <div class="wrapper">
+          <div class="title">
+            <h1>
+              TAS - Thuis Actief Samen
+            </h1>
+          </div>
+
+          <div class="content">
+            <p>
+              <a href="http://www.farent.nl">Farent</a> heeft verschillende
+              programma’s aangesloten op het programma Lang Leve…! Wijkwerkers
+              hebben netwerk uit ‘s-Hertogenbosch ingebracht bij
+              programma(ontwikkeling).
+            </p>
+
+            <p>
+              “Bewonersgroepen zijn nog in de kramp van ‘We kunnen nog niks…’
+              Er is dus een adem nodig die langer is dan dit programma. Dat zie
+              je bijvoorbeeld in hoe we nu pas met Café Lohengrin kunnen werken
+              aan openluchtconcerten tijdens de Bossche Zomer.”
+            </p>
+
+            <p>
+              Een belangrijke les is de aanwezigheid van de wijkwerkers bij
+              programma. “Je haalt veel op met kunst en cultuur, anders dan wat
+              wij gewend zijn. Maar dan… Hoe maak je het overdraagbaar? Wat doe
+              je met die vrouw op het balkon? Je kent haar nog niet. Hoe laat
+              je haar aansluiten bij netwerk in de wijk? De beschikbaarheid van
+              wijkwerkers is soms kwetsbaar, hierdoor hebben we jammer genoeg
+              niet alles kunnen doen.”
+            </p>
+
+            <p>
+              In Zuid is de TAS uitgedeeld. “Een tasje dagbesteding met een
+              creatieve inhoud. Bij het afgeven maken we een praatje aan de
+              deur. Dat praatje is bijna belangrijker dan de tas zelf, blijkt
+              uit de reacties die we krijgen. Ouderen of hun kinderen mailen
+              bijvoorbeeld terug dat ze het zo fijn vinden om te merken dat
+              iemand aan ze denkt en in de gaten houdt. We hebben in de hele
+              stad al meer dan 700 tasjes uitgedeeld.”<br>
+              <br>
+              <br>
+              <b>OVER TAS</b>
+            </p>
+
+            <p>
+              Thuiszitten vanwege corona? Dagbesteding niet of nog maar
+              gedeeltelijk opgestart? De verveling slaat toe? Wel toe aan een
+              nieuwe uitdaging?<br>
+            </p>
+
+            <p>
+              Bestel dan nu de TAS - Thuis Actief Samen!<br>
+            </p>
+
+            <p>
+              De tas met inhoud wordt thuisbezorgd volgens de richtlijnen van
+              het RIVM.<br>
+              Je kunt kiezen uit een tas met:<br>
+            </p>
+
+            <ul>
+              <li>Een legpuzzel
+              </li>
+
+              <li>Een puzzelboekje
+              </li>
+
+              <li>Tijdschriften
+              </li>
+
+              <li>Een haak of breiwerk
+              </li>
+
+              <li>Een knutselwerk
+              </li>
+
+              <li>Een boek over ’s-Hertogenbosch
+              </li>
+
+              <li>Tekenen of schilderen
+              </li>
+
+              <li>Een vensterbankmoestuintje
+              </li>
+            </ul>
+            TAS bestellen? Bel Astrid van den Hoek op 06-21101705 of mail naar
+            astridvandenhoek@farent.nl . Vermeld wel duidelijk naam, adres,
+            telefoonnummer en welke TAS je wilt ontvangen. Meer info: <a href=
+            "http://www.farent.nl" target="_blank">www.farent.nl</a><br>
+            <br>
+            📸 Farent
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <footer>
+      <img width="154" height="150" src="static/avb.svg" alt=
+      "Academie voor Beeldvorming"><br>
+      © <a href="https://www.academievoorbeeldvorming.nl/">Academie voor
+      Beeldvorming</a>. 2024
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+          var hamburger = document.getElementById('hamburger');
+          var menu = document.getElementById('menu');
+          hamburger.addEventListener('click', function(e) {
+              hamburger.classList.toggle('is-active');
+              menu.classList.toggle('visible');
+          });
+
+          var links = document.querySelectorAll('a');
+          for (var link of links) {
+              var a = new RegExp('/' + window.location.host + '/');
+              if (!a.test(link.href)) {
+                  link.addEventListener('click', function(event) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                      window.open(this.href, '_blank');
+                  });
+              }
+          }
+      });
+    </script> 
+    <script src="static/flickity.pkgd.min.js"></script>
+  </body>
+</html>
